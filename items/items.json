@@ -1,0 +1,221 @@
+﻿[
+  // Balore
+  {
+    "name": "Balore",
+    "type": "toggle",
+    "img": "images/balore.png",
+    "codes": "balore"
+  },
+  // Malphas
+  {
+    "name": "Malphas",
+    "type": "toggle",
+    "img": "images/Malphas.png",
+    "codes": "malphas"
+  },
+  // Rahab
+  {
+    "name": "Rahab",
+    "type": "toggle",
+    "img": "images/Rahab.png",
+    "codes": "rahab"
+  },
+  // Hippogryph
+  {
+    "name": "Hippogryph",
+    "type": "toggle",
+    "img": "images/hippogryph.png",
+    "codes": "hippogryph"
+  },
+  // Flying Armor
+  {
+    "name": "Flying Armor",
+    "type": "toggle",
+    "img": "images/FlyingArmor.png",
+    "codes": "flyingarmor"
+  },
+  // Puppet Master
+  {
+    "name": "Puppet Master",
+    "type": "toggle",
+    "img": "images/PuppetMaster.png",
+    "codes": "puppetmaster"
+  },
+  // Zephyr
+  {
+    "name": "Zephyr",
+    "type": "toggle",
+    "img": "images/Zephyr.png",
+    "codes": "zephyr"
+  },
+  // Bat Company/Bat Form
+  {
+    "name": "Bat Form or Bat Company",
+    "type": "toggle",
+    "img": "images/BatCompany.png",
+    "codes": "batcompany"
+  },
+  // Paranoia
+  {
+    "name": "Paranoia",
+    "type": "toggle",
+    "img": "images/Paranoia.png",
+    "codes": "paranoia"
+  },
+  // Black Panther
+  {
+    "name": "Black Panther",
+    "type": "toggle",
+    "img": "images/BlackPanther.png",
+    "codes": "blackpanther"
+  },
+  // Tower Key
+  {
+    "name": "Tower Key",
+    "type": "toggle",
+    "img": "images/TowerKey.png",
+    "codes": "towerkey"
+  },
+  // Mina's Talisman
+  {
+    "name": "Mina's Talisman",
+    "type": "toggle",
+    "img": "images/MinasTalisman.png",
+    "codes": "minastalisman"
+  },
+  // Cinquedia
+  {
+    "name": "Cinquedia",
+    "type": "toggle",
+    "img": "images/Cinquedia.png",
+    "codes": "cinquedia"
+  },
+  // Golden Axe
+  {
+    "name": "Golden Axe",
+    "type": "toggle",
+    "img": "images/GoldenAxe.png",
+    "codes": "goldenaxe"
+  },
+  // Succubus
+  {
+    "name": "Succubus",
+    "type": "toggle",
+    "img": "images/Succubus.png",
+    "codes": "succubus"
+  },
+  // SkeletonApeBoneArk
+  {
+    "name": "Skeleton Ape or Bone Ark",
+    "type": "toggle",
+    "img": "images/SkeletonApeBoneArk.png",
+    "codes": "skeletonapeboneark"
+  },
+  // Magic Seal 1
+  {
+    "name": "Magic Seal 1",
+    "type": "toggle",
+    "img": "images/MagicSeal1.png",
+    "codes": "magicsealone"
+  },
+  // Magic Seal 2
+  {
+    "name": "Magic Seal 2",
+    "type": "toggle",
+    "img": "images/MagicSeal2.png",
+    "codes": "magicsealtwo"
+  },
+  // Magic Seal 3
+  {
+    "name": "Magic Seal 3",
+    "type": "toggle",
+    "img": "images/MagicSeal3.png",
+    "codes": "magicsealthree"
+  },
+  // Magic Seal 4
+  {
+    "name": "Magic Seal 4",
+    "type": "toggle",
+    "img": "images/MagicSeal4.png",
+    "codes": "magicsealfour"
+  },
+  // Magic Seal 5
+  {
+    "name": "Magic Seal 5",
+    "type": "toggle",
+    "img": "images/MagicSeal5.png",
+    "codes": "magicsealfive"
+  },
+  // Red Wall Soul One
+  {
+    "name": "Red Wall Soul 1",
+    "type": "progressive_toggle",
+    "stages": [
+      {
+        "img": "images/RedWallSoul1.png",
+        "codes": "redwallsoulone"
+      },
+      {
+        "img": "images/RedWallSoul1Found.png",
+        "disabled_img": "images/RedWallSoul1.png",
+        "disabled_img_mods": "",
+        "codes": "redwallsoulone",
+        "secondary_codes": "redwallsoulonefound"
+      }
+    ]
+  },
+  // Red Wall Soul Two
+  {
+    "name": "Red Wall Soul 2",
+    "type": "progressive_toggle",
+    "stages": [
+      {
+        "img": "images/RedWallSoul2.png",
+        "codes": "redwallsoultwo"
+      },
+      {
+        "img": "images/RedWallSoul2Found.png",
+        "disabled_img": "images/RedWallSoul2.png",
+        "disabled_img_mods": "",
+        "codes": "redwallsoultwo",
+        "secondary_codes": "redwallsoultwofound"
+      }
+    ]
+  },
+  // Red Wall Soul Three
+  {
+    "name": "Red Wall Soul 3",
+    "type": "progressive_toggle",
+    "stages": [
+      {
+        "img": "images/RedWallSoul3.png",
+        "codes": "redwallsoulthree"
+      },
+      {
+        "img": "images/RedWallSoul3Found.png",
+        "disabled_img": "images/RedWallSoul3.png",
+        "disabled_img_mods": "",
+        "codes": "redwallsoulthree",
+        "secondary_codes": "redwallsoulthreefound"
+      }
+    ]
+  },
+  // Red Wall Soul Four
+  {
+    "name": "Red Wall Soul 4",
+    "type": "progressive_toggle",
+    "stages": [
+      {
+        "img": "images/RedWallSoul4.png",
+        "codes": "redwallsoulfour"
+      },
+      {
+        "img": "images/RedWallSoul4Found.png",
+        "disabled_img": "images/RedWallSoul4.png",
+        "disabled_img_mods": "",
+        "codes": "redwallsoulfour",
+        "secondary_codes": "redwallsoulfourfound"
+      }
+    ]
+  }
+]

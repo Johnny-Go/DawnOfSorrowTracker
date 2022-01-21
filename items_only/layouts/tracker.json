@@ -1,0 +1,20 @@
+{
+  "tracker_capture_item": {
+    "type": "container",
+    "content": {
+      "type": "layout",
+      "key": "shared_item_grid"
+    }
+  },
+  "tracker_default": {
+    "type": "container",
+    "width": 500,
+    "background": "#212121",
+    "content": {
+      "dropshadow": true,
+      "margin": "5",
+      "type": "layout",
+      "key": "shared_item_grid"
+    }
+  }
+}

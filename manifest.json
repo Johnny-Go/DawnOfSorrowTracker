@@ -1,0 +1,16 @@
+﻿{
+  "name": "Castlevania: Dawn of Sorrow Randomizer",
+  "game_name": "Castlevania: Dawn of Sorrow Randomizer",
+  "platform": "Nintendo DS",
+  "package_version": "1.0",
+  "package_uid": "dos_rando_johnny",
+  "author": "JohnnyGo, JustLeeBelmont",
+  "variants": {
+    //"standard": {
+    //  "display_name": "Standard Map Tracker"
+    //},
+    "items_only": {
+      "display_name": "Item Tracker"
+    }
+  }
+}
