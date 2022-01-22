@@ -9,7 +9,7 @@
   "tracker_default": {
     "type": "container",
     "width": 500,
-    "background": "#212121",
+    "background": "#2b2b2b",
     "content": {
       "dropshadow": true,
       "margin": "5",

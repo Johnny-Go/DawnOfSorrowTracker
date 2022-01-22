@@ -1,0 +1,272 @@
+{
+  "tracker_default": {
+    "type": "container",
+    "background": "#2b2b2b",
+    "content": {
+      "type": "dock",
+      "dropshadow": true,
+      "content": [
+        {
+          "type": "dock",
+          "dock": "left",
+          "v_alignment": "stretch",
+          "content": [
+            {
+              "type": "group",
+              "header": "Items",
+              "dock": "top",
+              "content": {
+                "type": "layout",
+                "key": "shared_item_grid"
+              }
+            },
+            {
+              "type": "group",
+              "header": "Pinned Locations",
+              "content": {
+                "type": "recentpins",
+                "style": "wrap",
+                "h_alignment": "stretch",
+                "v_alignment": "stretch",
+                "orientation": "vertical",
+                "compact": true
+              }
+            }
+          ]
+        },
+        {
+          "type": "tabbed",
+          "tabs": [
+            {
+              "title": "Full Castle",
+              "content": {
+                "type": "map",
+                "maps": ["castle"]
+              }
+            },
+            {
+              "title": "The Lost Village",
+              "content": {
+                "type": "map",
+                "maps": ["thelostvillage"]
+              }
+            },
+            {
+              "title": "Wizardry Lab",
+              "content": {
+                "type": "map",
+                "maps": ["wizardrylab"]
+              }
+            },
+            {
+              "title": "Garden of Madness",
+              "content": {
+                "type": "map",
+                "maps": ["gardenofmadness"]
+              }
+            },
+            {
+              "title": "Demon Guest House",
+              "content": {
+                "type": "map",
+                "maps": ["demonguesthouse"]
+              }
+            },
+            {
+              "title": "The Dark Chapel",
+              "content": {
+                "type": "map",
+                "maps": ["thedarkchapel"]
+              }
+            },
+            {
+              "title": "Condemned Tower",
+              "content": {
+                "type": "map",
+                "maps": ["condemnedtower"]
+              }
+            },
+            {
+              "title": "Cursed Clock Tower",
+              "content": {
+                "type": "map",
+                "maps": ["cursedclocktower"]
+              }
+            },
+            {
+              "title": "The Pinnacle",
+              "content": {
+                "type": "map",
+                "maps": ["thepinnacle"]
+              }
+            },
+            {
+              "title": "Subterranean Hell",
+              "content": {
+                "type": "map",
+                "maps": ["subterraneanhell"]
+              }
+            },
+            {
+              "title": "Silenced Ruins",
+              "content": {
+                "type": "map",
+                "maps": ["silencedruins"]
+              }
+            },
+            {
+              "title": "Mine of Judgement",
+              "content": {
+                "type": "map",
+                "maps": ["mineofjudgement"]
+              }
+            },
+            {
+              "title": "The Abyss",
+              "content": {
+                "type": "map",
+                "maps": ["theabyss"]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "tracker_horizontal": {
+    "type": "container",
+    "background": "#2b2b2b",
+    "content": {
+      "type": "dock",
+      "dropshadow": true,
+      "content": [
+        {
+          "type": "dock",
+          "dock": "bottom",
+          "content": [
+            {
+              "type": "group",
+              "header": "Items",
+              "dock": "left",
+              "margin": "0,0,3,0",
+              "content": {
+                "type": "layout",
+                "h_alignment": "center",
+                "v_alignment": "center",
+                "key": "shared_item_grid"
+              }
+            },
+            {
+              "type": "group",
+              "header": "Pinned Locations",
+              "content": {
+                "type": "recentpins",
+                "style": "wrap",
+                "h_alignment": "stretch",
+                "v_alignment": "stretch",
+                "orientation": "horizontal",
+                "compact": true
+              }
+            }
+          ]
+        },
+        {
+          "type": "tabbed",
+          "tabs": [
+            {
+              "title": "Full Castle",
+              "content": {
+                "type": "map",
+                "maps": ["castle"]
+              }
+            },
+            {
+              "title": "The Lost Village",
+              "content": {
+                "type": "map",
+                "maps": ["thelostvillage"]
+              }
+            },
+            {
+              "title": "Wizardry Lab",
+              "content": {
+                "type": "map",
+                "maps": ["wizardrylab"]
+              }
+            },
+            {
+              "title": "Garden of Madness",
+              "content": {
+                "type": "map",
+                "maps": ["gardenofmadness"]
+              }
+            },
+            {
+              "title": "Demon Guest House",
+              "content": {
+                "type": "map",
+                "maps": ["demonguesthouse"]
+              }
+            },
+            {
+              "title": "The Dark Chapel",
+              "content": {
+                "type": "map",
+                "maps": ["thedarkchapel"]
+              }
+            },
+            {
+              "title": "Condemned Tower",
+              "content": {
+                "type": "map",
+                "maps": ["condemnedtower"]
+              }
+            },
+            {
+              "title": "Cursed Clock Tower",
+              "content": {
+                "type": "map",
+                "maps": ["cursedclocktower"]
+              }
+            },
+            {
+              "title": "The Pinnacle",
+              "content": {
+                "type": "map",
+                "maps": ["thepinnacle"]
+              }
+            },
+            {
+              "title": "Subterranean Hell",
+              "content": {
+                "type": "map",
+                "maps": ["subterraneanhell"]
+              }
+            },
+            {
+              "title": "Silenced Ruins",
+              "content": {
+                "type": "map",
+                "maps": ["silencedruins"]
+              }
+            },
+            {
+              "title": "Mine of Judgement",
+              "content": {
+                "type": "map",
+                "maps": ["mineofjudgement"]
+              }
+            },
+            {
+              "title": "The Abyss",
+              "content": {
+                "type": "map",
+                "maps": ["theabyss"]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

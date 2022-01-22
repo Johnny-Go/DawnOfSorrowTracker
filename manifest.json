@@ -6,9 +6,9 @@
   "package_uid": "dos_rando_johnny",
   "author": "JohnnyGo, JustLeeBelmont",
   "variants": {
-    //"standard": {
-    //  "display_name": "Standard Map Tracker"
-    //},
+    "standard": {
+      "display_name": "Standard Map Tracker"
+    },
     "items_only": {
       "display_name": "Item Tracker"
     }
