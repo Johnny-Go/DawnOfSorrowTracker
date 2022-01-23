@@ -320,9 +320,10 @@
       {
         "name": "Drawbridge Underwater",
         "access_rules": [
+          "malphas,puppetmaster,[hippogryph]", //backdash -> double jump -> puppet master
+          "malphas,puppetmaster,[batcompany]", //backdash -> double jump -> puppet master
           "hippogryph",
-          "batcompany",
-          "malphas,puppetmaster" //backdash -> double jump -> puppet master
+          "batcompany"
         ],
         "sections": [
           {
@@ -340,94 +341,6 @@
             "map": "castle",
             "x": 697,
             "y": 475,
-            "size": 20
-          }
-        ]
-      },
-      {
-        "name": "Below Village Neck Warmer",
-        "access_rules": [
-          //use cinquedia special to sequence break
-          "cinquedia,[rahab],[boneark],[puppetmaster],[malphas]",
-          "cinquedia,[rahab],[boneark],[batcompany]",
-          "cinquedia,[rahab],[boneark],[hippogryph]",
-          "cinquedia,[rahab],[skeletonape],[puppetmaster],[malphas]",
-          "cinquedia,[rahab],[skeletonape],[puppetmaster],[batcompany]",
-          "cinquedia,[rahab],[skeletonape],[puppetmaster],[hippogryph]",
-          "rahab,boneark,puppetmaster,malphas",
-          "rahab,boneark,batcompany",
-          "rahab,boneark,hippogryph",
-          "rahab,skeletonape,puppetmaster,malphas",
-          "rahab,skeletonape,puppetmaster,batcompany",
-          "rahab,skeletonape,puppetmaster,hippogryph",
-          //technically possible with blackpanther but uhh, I wouldn't want to try it
-          "blackpanther,rahab,[boneark],puppetmaster,malphas",
-          "blackpanther,rahab,[boneark],batcompany",
-          "blackpanther,rahab,[boneark],hippogryph",
-          "blackpanther,rahab,[skeletonape],[puppetmaster],malphas",
-          "blackpanther,rahab,[skeletonape],[puppetmaster],batcompany",
-          "blackpanther,rahab,[skeletonape],[puppetmaster],hippogryph"
-        ],
-        "sections": [
-          {
-            "name": "Neck Warmer",
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "thelostvillage",
-            "x": 746,
-            "y": 923
-          },
-          {
-            "map": "castle",
-            "x": 500,
-            "y": 587,
-            "size": 20
-          }
-        ]
-      },
-      {
-        "name": "Below Village Secret Area",
-        "access_rules": [
-          //use cinquedia special to sequence break
-          "cinquedia,[rahab],[boneark],[puppetmaster],[malphas]",
-          "cinquedia,[rahab],[boneark],[batcompany]",
-          "cinquedia,[rahab],[boneark],[hippogryph]",
-          "cinquedia,[rahab],[skeletonape],[puppetmaster],[malphas]",
-          "cinquedia,[rahab],[skeletonape],[puppetmaster],[batcompany]",
-          "cinquedia,[rahab],[skeletonape],[puppetmaster],[hippogryph]",
-          "rahab,boneark,puppetmaster,malphas",
-          "rahab,boneark,batcompany",
-          "rahab,boneark,hippogryph",
-          "rahab,skeletonape,puppetmaster,malphas",
-          "rahab,skeletonape,puppetmaster,batcompany",
-          "rahab,skeletonape,puppetmaster,hippogryph",
-          //technically possible with blackpanther but uhh, I wouldn't want to try it
-          "blackpanther,rahab,[boneark],puppetmaster,malphas",
-          "blackpanther,rahab,[boneark],batcompany",
-          "blackpanther,rahab,[boneark],hippogryph",
-          "blackpanther,rahab,[skeletonape],[puppetmaster],malphas",
-          "blackpanther,rahab,[skeletonape],[puppetmaster],batcompany",
-          "blackpanther,rahab,[skeletonape],[puppetmaster],hippogryph"
-        ],
-        "sections": [
-          {
-            "name": "Caviar",
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "thelostvillage",
-            "x": 413,
-            "y": 1023
-          },
-          {
-            "map": "castle",
-            "x": 425,
-            "y": 611,
             "size": 20
           }
         ]
@@ -462,6 +375,7 @@
   {
     "name": "Wizardy Lab",
     "color": "#32CCCE",
+    "access_rules": ["movement"],
     "children": [
       {
         "name": "Wizardry Lab Mirror",
@@ -580,6 +494,7 @@
         ]
       },
       {
+        //couldn't find a way to pair this item with the "Under the Village" items due to the fact you can see it by default
         "name": "Wizardry Lab Left Barrier",
         "sections": [
           {
@@ -683,31 +598,135 @@
             "size": 20
           }
         ]
+      }
+    ]
+  },
+  //More The Lost Village items, pretty restrictive to access though
+  {
+    "name": "Under the Village",
+    "color": "#32CCCE",
+    "access_rules": ["movement"],
+    "children": [
+      {
+        "name": "Below Village Neck Warmer",
+        "access_rules": [
+          //use cinquedia special to sequence break
+          "cinquedia,[rahab],[boneark],[puppetmaster],[malphas]",
+          "cinquedia,[rahab],[boneark],[batcompany]",
+          "cinquedia,[rahab],[boneark],[hippogryph]",
+          "cinquedia,[rahab],[skeletonape],[puppetmaster],[malphas]",
+          "cinquedia,[rahab],[skeletonape],[puppetmaster],[batcompany]",
+          "cinquedia,[rahab],[skeletonape],[puppetmaster],[hippogryph]",
+          "rahab,boneark,puppetmaster,malphas",
+          "rahab,boneark,batcompany",
+          "rahab,boneark,hippogryph",
+          "rahab,skeletonape,puppetmaster,malphas",
+          "rahab,skeletonape,puppetmaster,batcompany",
+          "rahab,skeletonape,puppetmaster,hippogryph",
+          //technically possible with blackpanther but uhh, I wouldn't want to try it
+          "blackpanther,rahab,[boneark],puppetmaster,malphas",
+          "blackpanther,rahab,[boneark],batcompany",
+          "blackpanther,rahab,[boneark],hippogryph",
+          "blackpanther,rahab,[skeletonape],[puppetmaster],malphas",
+          "blackpanther,rahab,[skeletonape],[puppetmaster],batcompany",
+          "blackpanther,rahab,[skeletonape],[puppetmaster],hippogryph"
+        ],
+        "sections": [
+          {
+            "name": "Neck Warmer",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "thelostvillage",
+            "x": 746,
+            "y": 923
+          },
+          {
+            "map": "castle",
+            "x": 500,
+            "y": 587,
+            "size": 20
+          }
+        ]
       },
       {
+        "name": "Below Village Secret Area",
+        "access_rules": [
+          //use cinquedia special to sequence break
+          "cinquedia,[rahab],[boneark],[puppetmaster],[malphas]",
+          "cinquedia,[rahab],[boneark],[batcompany]",
+          "cinquedia,[rahab],[boneark],[hippogryph]",
+          "cinquedia,[rahab],[skeletonape],[puppetmaster],[malphas]",
+          "cinquedia,[rahab],[skeletonape],[puppetmaster],[batcompany]",
+          "cinquedia,[rahab],[skeletonape],[puppetmaster],[hippogryph]",
+          "rahab,boneark,puppetmaster,malphas",
+          "rahab,boneark,batcompany",
+          "rahab,boneark,hippogryph",
+          "rahab,skeletonape,puppetmaster,malphas",
+          "rahab,skeletonape,puppetmaster,batcompany",
+          "rahab,skeletonape,puppetmaster,hippogryph",
+          //technically possible with blackpanther but uhh, I wouldn't want to try it
+          "blackpanther,rahab,[boneark],puppetmaster,malphas",
+          "blackpanther,rahab,[boneark],batcompany",
+          "blackpanther,rahab,[boneark],hippogryph",
+          "blackpanther,rahab,[skeletonape],[puppetmaster],malphas",
+          "blackpanther,rahab,[skeletonape],[puppetmaster],batcompany",
+          "blackpanther,rahab,[skeletonape],[puppetmaster],hippogryph"
+        ],
+        "sections": [
+          {
+            "name": "Caviar",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "thelostvillage",
+            "x": 413,
+            "y": 1023
+          },
+          {
+            "map": "castle",
+            "x": 425,
+            "y": 611,
+            "size": 20
+          }
+        ]
+      }
+    ]
+  },
+  //More Wizardry Lab items, restrive access though
+  {
+    "name": "Lower Wizardry Lab",
+    "color": "#32CCCE",
+    "access_rules": ["movement"],
+    "children": [
+      {
         "name": "Serenity Robe",
+        "access_rules": [
+          //use cinquedia special to sequence break
+          "cinquedia,[rahab],[boneark],[puppetmaster]",
+          "cinquedia,[rahab],[boneark],[malphas]",
+          "cinquedia,[rahab],[boneark],[batcompany]",
+          "cinquedia,[rahab],[boneark],[hippogryph]",
+          "cinquedia,[rahab],[skeletonape],[puppetmaster]",
+          "rahab,boneark,puppetmaster",
+          "rahab,boneark,malphas",
+          "rahab,boneark,batcompany",
+          "rahab,boneark,hippogryph",
+          "rahab,skeletonape,puppetmaster",
+          //technically possible with blackpanther but uhh, I wouldn't want to try it
+          "blackpanther,rahab,[boneark],puppetmaster",
+          "blackpanther,rahab,[boneark],malphas",
+          "blackpanther,rahab,[boneark],batcompany",
+          "blackpanther,rahab,[boneark],hippogryph",
+          "blackpanther,rahab,[skeletonape],[puppetmaster]"
+        ],
         "sections": [
           {
             "name": "Serenity Robe",
-            "access_rules": [
-              //use cinquedia special to sequence break
-              "cinquedia,[rahab],[boneark],[puppetmaster]",
-              "cinquedia,[rahab],[boneark],[malphas]",
-              "cinquedia,[rahab],[boneark],[batcompany]",
-              "cinquedia,[rahab],[boneark],[hippogryph]",
-              "cinquedia,[rahab],[skeletonape],[puppetmaster]",
-              "rahab,boneark,puppetmaster",
-              "rahab,boneark,malphas",
-              "rahab,boneark,batcompany",
-              "rahab,boneark,hippogryph",
-              "rahab,skeletonape,puppetmaster",
-              //technically possible with blackpanther but uhh, I wouldn't want to try it
-              "blackpanther,rahab,[boneark],puppetmaster",
-              "blackpanther,rahab,[boneark],malphas",
-              "blackpanther,rahab,[boneark],batcompany",
-              "blackpanther,rahab,[boneark],hippogryph",
-              "blackpanther,rahab,[skeletonape],[puppetmaster]"
-            ],
             "item_count": 1
           }
         ],
@@ -727,28 +746,28 @@
       },
       {
         "name": "Wizardry Lab Super Potion",
+        "access_rules": [
+          //use cinquedia special to sequence break
+          "cinquedia,[rahab],[boneark],[puppetmaster]",
+          "cinquedia,[rahab],[boneark],[malphas]",
+          "cinquedia,[rahab],[boneark],[batcompany]",
+          "cinquedia,[rahab],[boneark],[hippogryph]",
+          "cinquedia,[rahab],[skeletonape],[puppetmaster]",
+          "rahab,boneark,puppetmaster",
+          "rahab,boneark,malphas",
+          "rahab,boneark,batcompany",
+          "rahab,boneark,hippogryph",
+          "rahab,skeletonape,puppetmaster",
+          //technically possible with blackpanther but uhh, I wouldn't want to try it
+          "blackpanther,rahab,[boneark],puppetmaster",
+          "blackpanther,rahab,[boneark],malphas",
+          "blackpanther,rahab,[boneark],batcompany",
+          "blackpanther,rahab,[boneark],hippogryph",
+          "blackpanther,rahab,[skeletonape],[puppetmaster]"
+        ],
         "sections": [
           {
             "name": "Super Potion",
-            "access_rules": [
-              //use cinquedia special to sequence break
-              "cinquedia,[rahab],[boneark],[puppetmaster]",
-              "cinquedia,[rahab],[boneark],[malphas]",
-              "cinquedia,[rahab],[boneark],[batcompany]",
-              "cinquedia,[rahab],[boneark],[hippogryph]",
-              "cinquedia,[rahab],[skeletonape],[puppetmaster]",
-              "rahab,boneark,puppetmaster",
-              "rahab,boneark,malphas",
-              "rahab,boneark,batcompany",
-              "rahab,boneark,hippogryph",
-              "rahab,skeletonape,puppetmaster",
-              //technically possible with blackpanther but uhh, I wouldn't want to try it
-              "blackpanther,rahab,[boneark],puppetmaster",
-              "blackpanther,rahab,[boneark],malphas",
-              "blackpanther,rahab,[boneark],batcompany",
-              "blackpanther,rahab,[boneark],hippogryph",
-              "blackpanther,rahab,[skeletonape],[puppetmaster]"
-            ],
             "item_count": 1
           }
         ],
@@ -768,28 +787,28 @@
       },
       {
         "name": "Bloody Stud",
+        "access_rules": [
+          //use cinquedia special to sequence break
+          "cinquedia,[rahab],[boneark],[puppetmaster]",
+          "cinquedia,[rahab],[boneark],[malphas]",
+          "cinquedia,[rahab],[boneark],[batcompany]",
+          "cinquedia,[rahab],[boneark],[hippogryph]",
+          "cinquedia,[rahab],[skeletonape],[puppetmaster]",
+          "rahab,boneark,puppetmaster",
+          "rahab,boneark,malphas",
+          "rahab,boneark,batcompany",
+          "rahab,boneark,hippogryph",
+          "rahab,skeletonape,puppetmaster",
+          //technically possible with blackpanther but uhh, I wouldn't want to try it
+          "blackpanther,rahab,[boneark],puppetmaster",
+          "blackpanther,rahab,[boneark],malphas",
+          "blackpanther,rahab,[boneark],batcompany",
+          "blackpanther,rahab,[boneark],hippogryph",
+          "blackpanther,rahab,[skeletonape],[puppetmaster]"
+        ],
         "sections": [
           {
             "name": "Bloody Stud",
-            "access_rules": [
-              //use cinquedia special to sequence break
-              "cinquedia,[rahab],[boneark],[puppetmaster]",
-              "cinquedia,[rahab],[boneark],[malphas]",
-              "cinquedia,[rahab],[boneark],[batcompany]",
-              "cinquedia,[rahab],[boneark],[hippogryph]",
-              "cinquedia,[rahab],[skeletonape],[puppetmaster]",
-              "rahab,boneark,puppetmaster",
-              "rahab,boneark,malphas",
-              "rahab,boneark,batcompany",
-              "rahab,boneark,hippogryph",
-              "rahab,skeletonape,puppetmaster",
-              //technically possible with blackpanther but uhh, I wouldn't want to try it
-              "blackpanther,rahab,[boneark],puppetmaster",
-              "blackpanther,rahab,[boneark],malphas",
-              "blackpanther,rahab,[boneark],batcompany",
-              "blackpanther,rahab,[boneark],hippogryph",
-              "blackpanther,rahab,[skeletonape],[puppetmaster]"
-            ],
             "item_count": 1
           }
         ],
@@ -809,28 +828,28 @@
       },
       {
         "name": "Gold Ring Secret",
+        "access_rules": [
+          //use cinquedia special to sequence break
+          "cinquedia,[rahab],[boneark],[puppetmaster]",
+          "cinquedia,[rahab],[boneark],[malphas]",
+          "cinquedia,[rahab],[boneark],[batcompany]",
+          "cinquedia,[rahab],[boneark],[hippogryph]",
+          "cinquedia,[rahab],[skeletonape],[puppetmaster]",
+          "rahab,boneark,puppetmaster",
+          "rahab,boneark,malphas",
+          "rahab,boneark,batcompany",
+          "rahab,boneark,hippogryph",
+          "rahab,skeletonape,puppetmaster",
+          //technically possible with blackpanther but uhh, I wouldn't want to try it
+          "blackpanther,rahab,[boneark],puppetmaster",
+          "blackpanther,rahab,[boneark],malphas",
+          "blackpanther,rahab,[boneark],batcompany",
+          "blackpanther,rahab,[boneark],hippogryph",
+          "blackpanther,rahab,[skeletonape],[puppetmaster]"
+        ],
         "sections": [
           {
             "name": "Gold Ring",
-            "access_rules": [
-              //use cinquedia special to sequence break
-              "cinquedia,[rahab],[boneark],[puppetmaster]",
-              "cinquedia,[rahab],[boneark],[malphas]",
-              "cinquedia,[rahab],[boneark],[batcompany]",
-              "cinquedia,[rahab],[boneark],[hippogryph]",
-              "cinquedia,[rahab],[skeletonape],[puppetmaster]",
-              "rahab,boneark,puppetmaster",
-              "rahab,boneark,malphas",
-              "rahab,boneark,batcompany",
-              "rahab,boneark,hippogryph",
-              "rahab,skeletonape,puppetmaster",
-              //technically possible with blackpanther but uhh, I wouldn't want to try it
-              "blackpanther,rahab,[boneark],puppetmaster",
-              "blackpanther,rahab,[boneark],malphas",
-              "blackpanther,rahab,[boneark],batcompany",
-              "blackpanther,rahab,[boneark],hippogryph",
-              "blackpanther,rahab,[skeletonape],[puppetmaster]"
-            ],
             "item_count": 1
           }
         ],
@@ -853,6 +872,7 @@
   //Garden of Madness
   {
     "name": "Garden of Madness",
+    "access_rules": ["height", "flyingarmor,balore"],
     "color": "#FEFF00",
     "children": [
       {

@@ -1,17 +1,52 @@
 ﻿[
+  // Malphas
+  {
+    "name": "Malphas",
+    "type": "toggle",
+    "img": "images/Malphas.png",
+    "codes": "movement, jump, height, malphas"
+  },
+  // Hippogryph
+  {
+    "name": "Hippogryph",
+    "type": "toggle",
+    "img": "images/hippogryph.png",
+    "codes": "movement, jump, height, hippogryph"
+  },
+  // Bat Company/Bat Form
+  {
+    "name": "Bat Form or Bat Company",
+    "type": "toggle",
+    "img": "images/BatCompany.png",
+    "codes": "movement, jump, height, batcompany"
+  },
+  // Puppet Master
+  {
+    "name": "Puppet Master",
+    "type": "toggle",
+    "img": "images/PuppetMaster.png",
+    "codes": "movement, height, puppetmaster"
+  },
+  // Flying Armor
+  {
+    "name": "Flying Armor",
+    "type": "toggle",
+    "img": "images/FlyingArmor.png",
+    "codes": "movement, flyingarmor"
+  },
+  // Black Panther
+  {
+    "name": "Black Panther",
+    "type": "toggle",
+    "img": "images/BlackPanther.png",
+    "codes": "movement, blackpanther"
+  },
   // Balore
   {
     "name": "Balore",
     "type": "toggle",
     "img": "images/balore.png",
     "codes": "balore"
-  },
-  // Malphas
-  {
-    "name": "Malphas",
-    "type": "toggle",
-    "img": "images/Malphas.png",
-    "codes": "malphas"
   },
   // Rahab
   {
@@ -20,27 +55,6 @@
     "img": "images/Rahab.png",
     "codes": "rahab"
   },
-  // Hippogryph
-  {
-    "name": "Hippogryph",
-    "type": "toggle",
-    "img": "images/hippogryph.png",
-    "codes": "hippogryph"
-  },
-  // Flying Armor
-  {
-    "name": "Flying Armor",
-    "type": "toggle",
-    "img": "images/FlyingArmor.png",
-    "codes": "flyingarmor"
-  },
-  // Puppet Master
-  {
-    "name": "Puppet Master",
-    "type": "toggle",
-    "img": "images/PuppetMaster.png",
-    "codes": "puppetmaster"
-  },
   // Zephyr
   {
     "name": "Zephyr",
@@ -48,26 +62,12 @@
     "img": "images/Zephyr.png",
     "codes": "zephyr"
   },
-  // Bat Company/Bat Form
-  {
-    "name": "Bat Form or Bat Company",
-    "type": "toggle",
-    "img": "images/BatCompany.png",
-    "codes": "batcompany"
-  },
   // Paranoia
   {
     "name": "Paranoia",
     "type": "toggle",
     "img": "images/Paranoia.png",
     "codes": "paranoia"
-  },
-  // Black Panther
-  {
-    "name": "Black Panther",
-    "type": "toggle",
-    "img": "images/BlackPanther.png",
-    "codes": "blackpanther"
   },
   // Tower Key
   {
