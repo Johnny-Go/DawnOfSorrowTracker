@@ -1,4 +1,22 @@
 {
+  "settings_popup": {
+    "type": "array",
+    "margin": "5",
+    "content": [
+      {
+        "type": "group",
+        "header": "Magic Seals",
+        "header_background": "#3e4b57",
+        "content": [
+          {
+            "type": "item",
+            "margin": "-5,-1,-5,-5",
+            "item": "magicseals"
+          }
+        ]
+      }
+    ]
+  },
   "tracker_default": {
     "type": "container",
     "background": "#2b2b2b",
@@ -15,6 +33,12 @@
               "type": "group",
               "header": "Items",
               "dock": "top",
+              "header_content": {
+                "type": "button_popup",
+                "style": "settings",
+                "popup_background": "#55212121",
+                "layout": "settings_popup"
+              },
               "content": {
                 "type": "layout",
                 "key": "shared_item_grid"
@@ -149,6 +173,12 @@
               "header": "Items",
               "dock": "left",
               "margin": "0,0,3,0",
+              "header_content": {
+                "type": "button_popup",
+                "style": "settings",
+                "popup_background": "#55212121",
+                "layout": "settings_popup"
+              },
               "content": {
                 "type": "layout",
                 "h_alignment": "center",

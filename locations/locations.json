@@ -1,1 +1,889 @@
-[{}]
+[
+  //The Lost Village
+  {
+    "name": "The Lost Village",
+    "color": "#FF9800",
+    "children": [
+      {
+        "name": "Pumpkin Pie",
+        "access_rules": ["hippogryph", "batcompany", "malphas,puppetmaster"],
+        "sections": [
+          {
+            "name": "Pumpkin Pie",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "thelostvillage",
+            "x": 200,
+            "y": 250
+          },
+          {
+            "map": "castle",
+            "x": 373,
+            "y": 432,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "name": "Short Sword & Potion",
+        "sections": [
+          {
+            "name": "Short Sword",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "thelostvillage",
+            "x": 967,
+            "y": 393
+          },
+          {
+            "map": "castle",
+            "x": 550,
+            "y": 455,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "name": "Short Sword & Potion",
+        "sections": [
+          {
+            "name": "Potion",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "thelostvillage",
+            "x": 1010,
+            "y": 455
+          },
+          {
+            "map": "castle",
+            "x": 560,
+            "y": 477,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "name": "Claymore",
+        "sections": [
+          {
+            "name": "Claymore",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "thelostvillage",
+            "x": 555,
+            "y": 430
+          },
+          {
+            "map": "castle",
+            "x": 455,
+            "y": 475,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "name": "Spear",
+        "sections": [
+          {
+            "name": "Spear",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "thelostvillage",
+            "x": 340,
+            "y": 450
+          },
+          {
+            "map": "castle",
+            "x": 400,
+            "y": 480,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "name": "Mace Room",
+        "sections": [
+          {
+            "name": "Mace",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "thelostvillage",
+            "x": 167,
+            "y": 545
+          },
+          {
+            "map": "castle",
+            "x": 370,
+            "y": 500,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "name": "Mace Room",
+        "sections": [
+          {
+            "name": "$1000 Bag",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "thelostvillage",
+            "x": 200,
+            "y": 640
+          },
+          {
+            "map": "castle",
+            "x": 375,
+            "y": 520,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "name": "Money Bag",
+        "sections": [
+          {
+            "name": "$1000 Bag",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "thelostvillage",
+            "x": 580,
+            "y": 590
+          },
+          {
+            "map": "castle",
+            "x": 464,
+            "y": 507,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "name": "First Spin Devil",
+        "sections": [
+          {
+            "name": "Potion",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "thelostvillage",
+            "x": 855,
+            "y": 625
+          },
+          {
+            "map": "castle",
+            "x": 522,
+            "y": 520,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "name": "Lost Village Secret Room",
+        "sections": [
+          {
+            "name": "Secret Room Items",
+            "item_count": 2
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "thelostvillage",
+            "x": 1100,
+            "y": 820
+          },
+          {
+            "map": "castle",
+            "x": 582,
+            "y": 563,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "name": "Cape & Tier of Blood",
+        "sections": [
+          {
+            "name": "Cape",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "thelostvillage",
+            "x": 1270,
+            "y": 740
+          },
+          {
+            "map": "castle",
+            "x": 615,
+            "y": 543,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "name": "Cape & Tear of Blood",
+        "access_rules": ["{}", "paranoia"],
+        "sections": [
+          {
+            "name": "Tear of Blood",
+            "capture_item": true,
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "thelostvillage",
+            "x": 1315,
+            "y": 740
+          },
+          {
+            "map": "castle",
+            "x": 633,
+            "y": 543,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "name": "Drawbridge",
+        "access_rules": ["hippogryph", "malphas", "puppetmaster", "batcompany"],
+        "sections": [
+          {
+            "name": "Crimson Cloak",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "thelostvillage",
+            "x": 1735,
+            "y": 250
+          },
+          {
+            "map": "castle",
+            "x": 725,
+            "y": 430,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "name": "Heart Pendant",
+        "access_rules": ["hippogryph", "batcompany"],
+        "sections": [
+          {
+            "name": "Heart Pendant",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "thelostvillage",
+            "x": 1990,
+            "y": 230
+          },
+          {
+            "map": "castle",
+            "x": 785,
+            "y": 427,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "name": "Drawbridge Underwater",
+        "access_rules": [
+          "hippogryph",
+          "batcompany",
+          "malphas,puppetmaster" //backdash -> double jump -> puppet master
+        ],
+        "sections": [
+          {
+            "name": "Gold Stud",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "thelostvillage",
+            "x": 1595,
+            "y": 420
+          },
+          {
+            "map": "castle",
+            "x": 697,
+            "y": 475,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "name": "Below Village Neck Warmer",
+        "access_rules": [
+          //use cinquedia special to sequence break
+          "cinquedia,[rahab],[boneark],[puppetmaster],[malphas]",
+          "cinquedia,[rahab],[boneark],[batcompany]",
+          "cinquedia,[rahab],[boneark],[hippogryph]",
+          "cinquedia,[rahab],[skeletonape],[puppetmaster],[malphas]",
+          "cinquedia,[rahab],[skeletonape],[puppetmaster],[batcompany]",
+          "cinquedia,[rahab],[skeletonape],[puppetmaster],[hippogryph]",
+          "rahab,boneark,puppetmaster,malphas",
+          "rahab,boneark,batcompany",
+          "rahab,boneark,hippogryph",
+          "rahab,skeletonape,puppetmaster,malphas",
+          "rahab,skeletonape,puppetmaster,batcompany",
+          "rahab,skeletonape,puppetmaster,hippogryph",
+          //technically possible with blackpanther but uhh, I wouldn't want to try it
+          "blackpanther,rahab,[boneark],puppetmaster,malphas",
+          "blackpanther,rahab,[boneark],batcompany",
+          "blackpanther,rahab,[boneark],hippogryph",
+          "blackpanther,rahab,[skeletonape],[puppetmaster],malphas",
+          "blackpanther,rahab,[skeletonape],[puppetmaster],batcompany",
+          "blackpanther,rahab,[skeletonape],[puppetmaster],hippogryph"
+        ],
+        "sections": [
+          {
+            "name": "Neck Warmer",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "thelostvillage",
+            "x": 746,
+            "y": 923
+          },
+          {
+            "map": "castle",
+            "x": 500,
+            "y": 587,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "name": "Below Village Secret Area",
+        "access_rules": [
+          //use cinquedia special to sequence break
+          "cinquedia,[rahab],[boneark],[puppetmaster],[malphas]",
+          "cinquedia,[rahab],[boneark],[batcompany]",
+          "cinquedia,[rahab],[boneark],[hippogryph]",
+          "cinquedia,[rahab],[skeletonape],[puppetmaster],[malphas]",
+          "cinquedia,[rahab],[skeletonape],[puppetmaster],[batcompany]",
+          "cinquedia,[rahab],[skeletonape],[puppetmaster],[hippogryph]",
+          "rahab,boneark,puppetmaster,malphas",
+          "rahab,boneark,batcompany",
+          "rahab,boneark,hippogryph",
+          "rahab,skeletonape,puppetmaster,malphas",
+          "rahab,skeletonape,puppetmaster,batcompany",
+          "rahab,skeletonape,puppetmaster,hippogryph",
+          //technically possible with blackpanther but uhh, I wouldn't want to try it
+          "blackpanther,rahab,[boneark],puppetmaster,malphas",
+          "blackpanther,rahab,[boneark],batcompany",
+          "blackpanther,rahab,[boneark],hippogryph",
+          "blackpanther,rahab,[skeletonape],[puppetmaster],malphas",
+          "blackpanther,rahab,[skeletonape],[puppetmaster],batcompany",
+          "blackpanther,rahab,[skeletonape],[puppetmaster],hippogryph"
+        ],
+        "sections": [
+          {
+            "name": "Caviar",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "thelostvillage",
+            "x": 413,
+            "y": 1023
+          },
+          {
+            "map": "castle",
+            "x": 425,
+            "y": 611,
+            "size": 20
+          }
+        ]
+      },
+      //below this I'm not sure of the requirements
+      {
+        "name": "Village High Potion",
+        "access_rules": ["[]"],
+        "sections": [
+          {
+            "name": "High Potion",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "thelostvillage",
+            "x": 543,
+            "y": 44
+          },
+          {
+            "map": "castle",
+            "x": 462,
+            "y": 385,
+            "size": 20
+          }
+        ]
+      }
+    ]
+  },
+  //Wizardry Lab
+  {
+    "name": "Wizardy Lab",
+    "color": "#32CCCE",
+    "children": [
+      {
+        "name": "Wizardry Lab Mirror",
+        "sections": [
+          {
+            "name": "Combat Knife",
+            "access_rules": ["Balore"],
+            "item_count": 1
+          },
+          {
+            "name": "Rosary",
+            "access_rules": ["Balore,Paranoia"],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "wizardrylab",
+            "x": 2122,
+            "y": 170
+          },
+          {
+            "map": "castle",
+            "x": 930,
+            "y": 520,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "name": "Wizardry Lab Mind Up",
+        "sections": [
+          {
+            "name": "Mind Up",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "wizardrylab",
+            "x": 1423,
+            "y": 248
+          },
+          {
+            "map": "castle",
+            "x": 770,
+            "y": 540,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "name": "Blunt Sword",
+        "sections": [
+          {
+            "name": "Blunt Sword",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "wizardrylab",
+            "x": 1775,
+            "y": 250
+          },
+          {
+            "map": "castle",
+            "x": 850,
+            "y": 539,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "name": "Blunt Sword Room Chest",
+        "sections": [
+          {
+            "name": "Chest",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "wizardrylab",
+            "x": 1775,
+            "y": 360
+          },
+          {
+            "map": "castle",
+            "x": 850,
+            "y": 568,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "name": "Wizardry Lab Left Barrier",
+        "sections": [
+          {
+            "name": "Scarf",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "wizardrylab",
+            "x": 797,
+            "y": 844
+          },
+          {
+            "map": "castle",
+            "x": 630,
+            "y": 676,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "name": "Wizardry Lab Left Barrier",
+        "sections": [
+          {
+            "name": "UMA News 4",
+            "access_rules": [
+              "{}",
+              //use cinquedia special to sequence break
+              "cinquedia,[rahab],[boneark],[puppetmaster],[malphas]",
+              "cinquedia,[rahab],[boneark],[batcompany]",
+              "cinquedia,[rahab],[boneark],[hippogryph]",
+              "cinquedia,[rahab],[skeletonape],[puppetmaster],[malphas]",
+              "cinquedia,[rahab],[skeletonape],[puppetmaster],[batcompany]",
+              "cinquedia,[rahab],[skeletonape],[puppetmaster],[hippogryph]",
+              "rahab,boneark,puppetmaster,malphas",
+              "rahab,boneark,batcompany",
+              "rahab,boneark,hippogryph",
+              "rahab,skeletonape,puppetmaster,malphas",
+              "rahab,skeletonape,puppetmaster,batcompany",
+              "rahab,skeletonape,puppetmaster,hippogryph",
+              //technically possible with blackpanther but uhh, I wouldn't want to try it
+              "blackpanther,rahab,[boneark],puppetmaster,malphas",
+              "blackpanther,rahab,[boneark],batcompany",
+              "blackpanther,rahab,[boneark],hippogryph",
+              "blackpanther,rahab,[skeletonape],[puppetmaster],malphas",
+              "blackpanther,rahab,[skeletonape],[puppetmaster],batcompany",
+              "blackpanther,rahab,[skeletonape],[puppetmaster],hippogryph"
+            ],
+            "capture_item": true,
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "wizardrylab",
+            "x": 744,
+            "y": 844
+          },
+          {
+            "map": "castle",
+            "x": 612,
+            "y": 676,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "name": "Aquarius",
+        "sections": [
+          {
+            "name": "Aquarius",
+            "access_rules": [
+              "{}",
+              //use cinquedia special to sequence break
+              "cinquedia,[rahab],[hippogryph]",
+              "cinquedia,[rahab],[batcompany]",
+              "rahab,hippogryph",
+              "rahab,batcompany"
+            ],
+            "capture_item": true,
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "wizardrylab",
+            "x": 1955,
+            "y": 747
+          },
+          {
+            "map": "castle",
+            "x": 895,
+            "y": 655,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "name": "Wizardry Lab Secret Room",
+        "sections": [
+          {
+            "name": "Foie Gras",
+            "access_rules": [
+              "Balore",
+              "batcompany",
+              "puppetmaster,malphas",
+              "puppetmaster,hippogryph"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "wizardrylab",
+            "x": 2284,
+            "y": 356
+          },
+          {
+            "map": "castle",
+            "x": 962,
+            "y": 562,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "name": "Serenity Robe",
+        "sections": [
+          {
+            "name": "Serenity Robe",
+            "access_rules": [
+              //use cinquedia special to sequence break
+              "cinquedia,[rahab],[boneark],[puppetmaster]",
+              "cinquedia,[rahab],[boneark],[malphas]",
+              "cinquedia,[rahab],[boneark],[batcompany]",
+              "cinquedia,[rahab],[boneark],[hippogryph]",
+              "cinquedia,[rahab],[skeletonape],[puppetmaster]",
+              "rahab,boneark,puppetmaster",
+              "rahab,boneark,malphas",
+              "rahab,boneark,batcompany",
+              "rahab,boneark,hippogryph",
+              "rahab,skeletonape,puppetmaster",
+              //technically possible with blackpanther but uhh, I wouldn't want to try it
+              "blackpanther,rahab,[boneark],puppetmaster",
+              "blackpanther,rahab,[boneark],malphas",
+              "blackpanther,rahab,[boneark],batcompany",
+              "blackpanther,rahab,[boneark],hippogryph",
+              "blackpanther,rahab,[skeletonape],[puppetmaster]"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "wizardrylab",
+            "x": 1570,
+            "y": 1307
+          },
+          {
+            "map": "castle",
+            "x": 805,
+            "y": 785,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "name": "Wizardry Lab Super Potion",
+        "sections": [
+          {
+            "name": "Super Potion",
+            "access_rules": [
+              //use cinquedia special to sequence break
+              "cinquedia,[rahab],[boneark],[puppetmaster]",
+              "cinquedia,[rahab],[boneark],[malphas]",
+              "cinquedia,[rahab],[boneark],[batcompany]",
+              "cinquedia,[rahab],[boneark],[hippogryph]",
+              "cinquedia,[rahab],[skeletonape],[puppetmaster]",
+              "rahab,boneark,puppetmaster",
+              "rahab,boneark,malphas",
+              "rahab,boneark,batcompany",
+              "rahab,boneark,hippogryph",
+              "rahab,skeletonape,puppetmaster",
+              //technically possible with blackpanther but uhh, I wouldn't want to try it
+              "blackpanther,rahab,[boneark],puppetmaster",
+              "blackpanther,rahab,[boneark],malphas",
+              "blackpanther,rahab,[boneark],batcompany",
+              "blackpanther,rahab,[boneark],hippogryph",
+              "blackpanther,rahab,[skeletonape],[puppetmaster]"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "wizardrylab",
+            "x": 1163,
+            "y": 1519
+          },
+          {
+            "map": "castle",
+            "x": 713,
+            "y": 833,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "name": "Bloody Stud",
+        "sections": [
+          {
+            "name": "Bloody Stud",
+            "access_rules": [
+              //use cinquedia special to sequence break
+              "cinquedia,[rahab],[boneark],[puppetmaster]",
+              "cinquedia,[rahab],[boneark],[malphas]",
+              "cinquedia,[rahab],[boneark],[batcompany]",
+              "cinquedia,[rahab],[boneark],[hippogryph]",
+              "cinquedia,[rahab],[skeletonape],[puppetmaster]",
+              "rahab,boneark,puppetmaster",
+              "rahab,boneark,malphas",
+              "rahab,boneark,batcompany",
+              "rahab,boneark,hippogryph",
+              "rahab,skeletonape,puppetmaster",
+              //technically possible with blackpanther but uhh, I wouldn't want to try it
+              "blackpanther,rahab,[boneark],puppetmaster",
+              "blackpanther,rahab,[boneark],malphas",
+              "blackpanther,rahab,[boneark],batcompany",
+              "blackpanther,rahab,[boneark],hippogryph",
+              "blackpanther,rahab,[skeletonape],[puppetmaster]"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "wizardrylab",
+            "x": 1007,
+            "y": 1522
+          },
+          {
+            "map": "castle",
+            "x": 678,
+            "y": 834,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "name": "Gold Ring Secret",
+        "sections": [
+          {
+            "name": "Gold Ring",
+            "access_rules": [
+              //use cinquedia special to sequence break
+              "cinquedia,[rahab],[boneark],[puppetmaster]",
+              "cinquedia,[rahab],[boneark],[malphas]",
+              "cinquedia,[rahab],[boneark],[batcompany]",
+              "cinquedia,[rahab],[boneark],[hippogryph]",
+              "cinquedia,[rahab],[skeletonape],[puppetmaster]",
+              "rahab,boneark,puppetmaster",
+              "rahab,boneark,malphas",
+              "rahab,boneark,batcompany",
+              "rahab,boneark,hippogryph",
+              "rahab,skeletonape,puppetmaster",
+              //technically possible with blackpanther but uhh, I wouldn't want to try it
+              "blackpanther,rahab,[boneark],puppetmaster",
+              "blackpanther,rahab,[boneark],malphas",
+              "blackpanther,rahab,[boneark],batcompany",
+              "blackpanther,rahab,[boneark],hippogryph",
+              "blackpanther,rahab,[skeletonape],[puppetmaster]"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "wizardrylab",
+            "x": 64,
+            "y": 1518
+          },
+          {
+            "map": "castle",
+            "x": 462,
+            "y": 832,
+            "size": 20
+          }
+        ]
+      }
+    ]
+  },
+  //Garden of Madness
+  {
+    "name": "Garden of Madness",
+    "color": "#FEFF00",
+    "children": [
+      {
+        "name": "Magic Seal 2",
+        "sections": [
+          {
+            "name": "Magic Seal 2",
+            "access_rules": [
+              "balore",
+              "hippogryph",
+              "batcompany",
+              "malphas",
+              "puppetmaster"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "gardenofmadness",
+            "x": 408,
+            "y": 916
+          },
+          {
+            "map": "castle",
+            "x": 1067,
+            "y": 515,
+            "size": 20
+          }
+        ]
+      }
+    ]
+  }
+]

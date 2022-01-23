@@ -104,12 +104,49 @@
     "img": "images/Succubus.png",
     "codes": "succubus"
   },
-  // SkeletonApeBoneArk
+  // Skeleton Ape
   {
-    "name": "Skeleton Ape or Bone Ark",
+    "name": "Skeleton Ape",
     "type": "toggle",
-    "img": "images/SkeletonApeBoneArk.png",
-    "codes": "skeletonapeboneark"
+    "img": "images/SkeletonApe.png",
+    "codes": "skeletonape"
+  },
+  // Bone Ark
+  {
+    "name": "Bone Ark",
+    "type": "toggle",
+    "img": "images/BoneArk.png",
+    "codes": "boneark"
+  },
+  // Skeleton Ape & Bone Ark Combo
+  {
+    "name": "Skeleton Ape and/or Bone Ark",
+    "type": "composite_toggle",
+    "codes": "skeletonapeboneark",
+    "item_left": "skeletonape",
+    "item_right": "boneark",
+    "images": [
+      {
+        "left": false,
+        "right": false,
+        "img": "images/SkeletonApeBoneArkNone.png"
+      },
+      {
+        "left": true,
+        "right": false,
+        "img": "images/SkeletonApeBoneArkLeft.png"
+      },
+      {
+        "left": false,
+        "right": true,
+        "img": "images/SkeletonApeBoneArkRight.png"
+      },
+      {
+        "left": true,
+        "right": true,
+        "img": "images/SkeletonApeBoneArk.png"
+      }
+    ]
   },
   // Magic Seal 1
   {
@@ -217,5 +254,12 @@
         "secondary_codes": "redwallsoulfourfound"
       }
     ]
+  },
+  // Claimh Solais
+  {
+    "name": "Claimh Solais",
+    "type": "toggle",
+    "img": "images/ClaimhSolais.png",
+    "codes": "claimhsolais"
   }
 ]
