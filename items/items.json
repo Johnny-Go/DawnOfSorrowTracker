@@ -1,24 +1,24 @@
 ﻿[
-  // Malphas
-  {
-    "name": "Malphas",
-    "type": "toggle",
-    "img": "images/Malphas.png",
-    "codes": "movement, jump, height, malphas"
-  },
   // Hippogryph
   {
     "name": "Hippogryph",
     "type": "toggle",
     "img": "images/hippogryph.png",
-    "codes": "movement, jump, height, hippogryph"
+    "codes": "movement, jump, height, veryhigh, hippogryph"
   },
   // Bat Company/Bat Form
   {
     "name": "Bat Form or Bat Company",
     "type": "toggle",
     "img": "images/BatCompany.png",
-    "codes": "movement, jump, height, batcompany"
+    "codes": "movement, jump, height, veryhigh, batcompany"
+  },
+  // Malphas
+  {
+    "name": "Malphas",
+    "type": "toggle",
+    "img": "images/Malphas.png",
+    "codes": "movement, jump, height, malphas"
   },
   // Puppet Master
   {
@@ -183,9 +183,9 @@
     "img": "images/MagicSeal5.png",
     "codes": "magicsealfive"
   },
-  // Red Wall Soul One
+  // The Dark Chapel Red Wall
   {
-    "name": "Red Wall Soul 1",
+    "name": "The Dark Chapel Red Wall",
     "type": "progressive_toggle",
     "stages": [
       {
@@ -196,8 +196,7 @@
         "img": "images/RedWallSoul1Found.png",
         "disabled_img": "images/RedWallSoul1.png",
         "disabled_img_mods": "",
-        "codes": "redwallsoulone",
-        "secondary_codes": "redwallsoulonefound"
+        "codes": "redwallsoulone,redwallsoulonefound"
       }
     ]
   },
@@ -214,8 +213,7 @@
         "img": "images/RedWallSoul2Found.png",
         "disabled_img": "images/RedWallSoul2.png",
         "disabled_img_mods": "",
-        "codes": "redwallsoultwo",
-        "secondary_codes": "redwallsoultwofound"
+        "codes": "redwallsoultwo,redwallsoultwofound"
       }
     ]
   },
@@ -232,8 +230,7 @@
         "img": "images/RedWallSoul3Found.png",
         "disabled_img": "images/RedWallSoul3.png",
         "disabled_img_mods": "",
-        "codes": "redwallsoulthree",
-        "secondary_codes": "redwallsoulthreefound"
+        "codes": "redwallsoulthree,redwallsoulthreefound"
       }
     ]
   },
@@ -250,8 +247,7 @@
         "img": "images/RedWallSoul4Found.png",
         "disabled_img": "images/RedWallSoul4.png",
         "disabled_img_mods": "",
-        "codes": "redwallsoulfour",
-        "secondary_codes": "redwallsoulfourfound"
+        "codes": "redwallsoulfour,redwallsoulfourfound"
       }
     ]
   },

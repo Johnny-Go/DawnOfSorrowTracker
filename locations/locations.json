@@ -320,8 +320,9 @@
       {
         "name": "Drawbridge Underwater",
         "access_rules": [
-          "malphas,puppetmaster,[hippogryph]", //backdash -> double jump -> puppet master
-          "malphas,puppetmaster,[batcompany]", //backdash -> double jump -> puppet master
+          //backdash -> double jump -> puppet master
+          "malphas,puppetmaster,[hippogryph]",
+          "malphas,puppetmaster,[batcompany]",
           "hippogryph",
           "batcompany"
         ],
@@ -494,7 +495,7 @@
         ]
       },
       {
-        //couldn't find a way to pair this item with the "Under the Village" items due to the fact you can see it by default
+        //couldn't find a way to pair this item with the "Under the Village" items due to the fact you can see it with any movement item
         "name": "Wizardry Lab Left Barrier",
         "sections": [
           {
@@ -503,24 +504,16 @@
               "{}",
               //use cinquedia special to sequence break
               "cinquedia,[rahab],[boneark],[puppetmaster],[malphas]",
-              "cinquedia,[rahab],[boneark],[batcompany]",
-              "cinquedia,[rahab],[boneark],[hippogryph]",
-              "cinquedia,[rahab],[skeletonape],[puppetmaster],[malphas]",
-              "cinquedia,[rahab],[skeletonape],[puppetmaster],[batcompany]",
-              "cinquedia,[rahab],[skeletonape],[puppetmaster],[hippogryph]",
+              "cinquedia,[rahab],[boneark],[veryhigh]",
+              "cinquedia,[rahab],[skeletonape],[puppetmaster],[jump]",
               "rahab,boneark,puppetmaster,malphas",
-              "rahab,boneark,batcompany",
-              "rahab,boneark,hippogryph",
-              "rahab,skeletonape,puppetmaster,malphas",
-              "rahab,skeletonape,puppetmaster,batcompany",
-              "rahab,skeletonape,puppetmaster,hippogryph",
+              "rahab,boneark,veryhigh",
+              "rahab,skeletonape,puppetmaster,jump",
               //technically possible with blackpanther but uhh, I wouldn't want to try it
               "blackpanther,rahab,[boneark],puppetmaster,malphas",
-              "blackpanther,rahab,[boneark],batcompany",
-              "blackpanther,rahab,[boneark],hippogryph",
-              "blackpanther,rahab,[skeletonape],[puppetmaster],malphas",
-              "blackpanther,rahab,[skeletonape],[puppetmaster],batcompany",
-              "blackpanther,rahab,[skeletonape],[puppetmaster],hippogryph"
+              "blackpanther,rahab,[boneark],veryhigh",
+              "blackpanther,rahab,[skeletonape],puppetmaster,malphas",
+              "blackpanther,rahab,[skeletonape],[puppetmaster],veryhigh"
             ],
             "capture_item": true,
             "item_count": 1
@@ -548,10 +541,8 @@
             "access_rules": [
               "{}",
               //use cinquedia special to sequence break
-              "cinquedia,[rahab],[hippogryph]",
-              "cinquedia,[rahab],[batcompany]",
-              "rahab,hippogryph",
-              "rahab,batcompany"
+              "cinquedia,[rahab],[veryhigh]",
+              "rahab,veryhigh"
             ],
             "capture_item": true,
             "item_count": 1
@@ -601,7 +592,7 @@
       }
     ]
   },
-  //More The Lost Village items, pretty restrictive to access though
+  //More The Lost Village items, very restrictive to access
   {
     "name": "Under the Village",
     "color": "#32CCCE",
@@ -611,24 +602,16 @@
         "access_rules": [
           //use cinquedia special to sequence break
           "cinquedia,[rahab],[boneark],[puppetmaster],[malphas]",
-          "cinquedia,[rahab],[boneark],[batcompany]",
-          "cinquedia,[rahab],[boneark],[hippogryph]",
-          "cinquedia,[rahab],[skeletonape],[puppetmaster],[malphas]",
-          "cinquedia,[rahab],[skeletonape],[puppetmaster],[batcompany]",
-          "cinquedia,[rahab],[skeletonape],[puppetmaster],[hippogryph]",
+          "cinquedia,[rahab],[boneark],[veryhigh]",
+          "cinquedia,[rahab],[skeletonape],[puppetmaster],[jump]",
           "rahab,boneark,puppetmaster,malphas",
-          "rahab,boneark,batcompany",
-          "rahab,boneark,hippogryph",
-          "rahab,skeletonape,puppetmaster,malphas",
-          "rahab,skeletonape,puppetmaster,batcompany",
-          "rahab,skeletonape,puppetmaster,hippogryph",
+          "rahab,boneark,veryhigh",
+          "rahab,skeletonape,puppetmaster,jump",
           //technically possible with blackpanther but uhh, I wouldn't want to try it
           "blackpanther,rahab,[boneark],puppetmaster,malphas",
-          "blackpanther,rahab,[boneark],batcompany",
-          "blackpanther,rahab,[boneark],hippogryph",
-          "blackpanther,rahab,[skeletonape],[puppetmaster],malphas",
-          "blackpanther,rahab,[skeletonape],[puppetmaster],batcompany",
-          "blackpanther,rahab,[skeletonape],[puppetmaster],hippogryph"
+          "blackpanther,rahab,[boneark],veryhigh",
+          "blackpanther,rahab,[skeletonape],puppetmaster,malphas",
+          "blackpanther,rahab,[skeletonape],[puppetmaster],veryhigh"
         ],
         "children": [
           {
@@ -679,7 +662,7 @@
       }
     ]
   },
-  //More Wizardry Lab items, restrive access though
+  //More Wizardry Lab items, restrive access
   {
     "name": "Lower Wizardry Lab",
     "color": "#32CCCE",
@@ -688,22 +671,13 @@
       {
         "access_rules": [
           //use cinquedia special to sequence break
-          "cinquedia,[rahab],[boneark],[puppetmaster]",
-          "cinquedia,[rahab],[boneark],[malphas]",
-          "cinquedia,[rahab],[boneark],[batcompany]",
-          "cinquedia,[rahab],[boneark],[hippogryph]",
+          "cinquedia,[rahab],[boneark],[height]",
           "cinquedia,[rahab],[skeletonape],[puppetmaster]",
-          "rahab,boneark,puppetmaster",
-          "rahab,boneark,malphas",
-          "rahab,boneark,batcompany",
-          "rahab,boneark,hippogryph",
+          "rahab,boneark,height",
           "rahab,skeletonape,puppetmaster",
           //technically possible with blackpanther but uhh, I wouldn't want to try it
-          "blackpanther,rahab,[boneark],puppetmaster",
-          "blackpanther,rahab,[boneark],malphas",
-          "blackpanther,rahab,[boneark],batcompany",
-          "blackpanther,rahab,[boneark],hippogryph",
-          "blackpanther,rahab,[skeletonape],[puppetmaster]"
+          "blackpanther,rahab,jump,[boneark]",
+          "blackpanther,rahab,jump,[skeletonape],[puppetmaster]"
         ],
         "children": [
           {
@@ -809,13 +783,6 @@
         "sections": [
           {
             "name": "Magic Seal 2",
-            "access_rules": [
-              "balore",
-              "hippogryph",
-              "batcompany",
-              "malphas",
-              "puppetmaster"
-            ],
             "item_count": 1
           }
         ],
@@ -829,6 +796,448 @@
             "map": "castle",
             "x": 1067,
             "y": 515,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "name": "Breast Plate & Fleuret",
+        "sections": [
+          {
+            "name": "Breast Plate",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "gardenofmadness",
+            "x": 506,
+            "y": 605
+          },
+          {
+            "map": "castle",
+            "x": 1093,
+            "y": 450,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "name": "Breast Plate & Fleuret",
+        "sections": [
+          {
+            "name": "Fleuret",
+            "item_count": 1
+          },
+          {
+            "name": "Chest",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "gardenofmadness",
+            "x": 174,
+            "y": 546
+          },
+          {
+            "map": "castle",
+            "x": 1016,
+            "y": 433,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "name": "Elfin Robe",
+        "access_rules": ["{flyingarmor,balore}", " height"],
+        "sections": [
+          {
+            "name": "Elfin Robe",
+            "capture_item": true,
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "gardenofmadness",
+            "x": 447,
+            "y": 368
+          },
+          {
+            "map": "castle",
+            "x": 1077,
+            "y": 391,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "name": "Garden of Madness Secret Room",
+        "access_rules": ["veryhigh"],
+        "sections": [
+          {
+            "name": "Ninja Suit",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "gardenofmadness",
+            "x": 574,
+            "y": 246
+          },
+          {
+            "map": "castle",
+            "x": 1109,
+            "y": 368,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "name": "Handgun",
+        "access_rules": ["{flyingarmor,balore}"],
+        "sections": [
+          {
+            "name": "Handgun",
+            "capture_item": true,
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "gardenofmadness",
+            "x": 1756,
+            "y": 557
+          },
+          {
+            "map": "castle",
+            "x": 1378,
+            "y": 433,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "name": "Three 7s",
+        "sections": [
+          {
+            "name": "Three 7's",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "gardenofmadness",
+            "x": 1629,
+            "y": 829
+          },
+          {
+            "map": "castle",
+            "x": 1343,
+            "y": 499,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "name": "Small Sword",
+        "access_rules": [
+          "cinquedia,[rahab],height",
+          "rahab,height",
+          "flyingarmor,balore,rahab,blackpanther"
+        ],
+        "sections": [
+          {
+            "name": "Small Sword",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "gardenofmadness",
+            "x": 1380,
+            "y": 1003
+          },
+          {
+            "map": "castle",
+            "x": 1288,
+            "y": 538,
+            "size": 20
+          }
+        ]
+      }
+    ]
+  },
+  //The Dark Chapel
+  {
+    "name": "The Dark Chapel",
+    "access_rules": ["height", "flyingarmor,balore"],
+    "color": "#00FF06",
+    "children": [
+      {
+        "name": "Long Sword",
+        "access_rules": ["{flyingarmor,balore}", "height"],
+        "sections": [
+          {
+            "name": "Long Sword",
+            "capture_item": true,
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "thedarkchapel",
+            "x": 330,
+            "y": 508
+          },
+          {
+            "map": "castle",
+            "x": 1431,
+            "y": 435,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "name": "The Dark Chapel Potion",
+        "access_rules": ["movement"],
+        "sections": [
+          {
+            "name": "Potion",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "thedarkchapel",
+            "x": 1128,
+            "y": 444
+          },
+          {
+            "map": "castle",
+            "x": 1610,
+            "y": 411,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "name": "$2000 Money Bag",
+        "sections": [
+          {
+            "name": "$2000 Money Bag",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "thedarkchapel",
+            "x": 329,
+            "y": 825
+          },
+          {
+            "map": "castle",
+            "x": 1431,
+            "y": 499,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "name": "Traveller Cape",
+        "sections": [
+          {
+            "name": "Traveller Cape",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "thedarkchapel",
+            "x": 329,
+            "y": 925
+          },
+          {
+            "map": "castle",
+            "x": 1431,
+            "y": 522,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "name": "Halberd",
+        "access_rules": ["redwallsoulone,redwallsoulonefound"],
+        "sections": [
+          {
+            "name": "Halberd",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "thedarkchapel",
+            "x": 41,
+            "y": 1225
+          },
+          {
+            "map": "castle",
+            "x": 1370,
+            "y": 586,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "name": "The Dark Chapel Mirror",
+        "sections": [
+          {
+            "name": "Red Scarf",
+            "item_count": 1
+          },
+          {
+            "name": "Megingiord",
+            "access_rules": ["Paranoia"],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "wizardrylab",
+            "x": 713,
+            "y": 1210
+          },
+          {
+            "map": "castle",
+            "x": 1519,
+            "y": 588,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "name": "Power Belt",
+        "access_rules": ["{flyingarmor,balore}", "height"],
+        "sections": [
+          {
+            "name": "Power Belt",
+            "capture_item": true,
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "thedarkchapel",
+            "x": 334,
+            "y": 228
+          },
+          {
+            "map": "castle",
+            "x": 1432,
+            "y": 363,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "name": "Hippogryph into leftmost Bell",
+        "access_rules": ["hippogryph"],
+        "sections": [
+          {
+            "name": "Left Bell",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "thedarkchapel",
+            "x": 977,
+            "y": 99
+          },
+          {
+            "map": "castle",
+            "x": 1580,
+            "y": 334,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "name": "Dark Chapel Belltower",
+        "sections": [
+          {
+            "name": "Anti-Venom",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "thedarkchapel",
+            "x": 935,
+            "y": 51
+          },
+          {
+            "map": "castle",
+            "x": 1570,
+            "y": 317,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "name": "Dark Chapel Belltower",
+        "sections": [
+          {
+            "name": "High Mind Up",
+            "access_rules": ["{flyingarmor,balore}", "height", "blackpanther"],
+            "capture_item": true,
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "thedarkchapel",
+            "x": 1128,
+            "y": 106
+          },
+          {
+            "map": "castle",
+            "x": 1613,
+            "y": 335,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "name": "Hoop Earing",
+        "access_rules": ["$magicSealTwo"],
+        "sections": [
+          {
+            "name": "Hoop Earing",
+            "access_rules": [
+              "{flyingarmor,balore}",
+              "veryhigh",
+              "blackpanther",
+              "malphas,[puppetmaster]",
+              "malphas,[flyingarmor]",
+              "flyingarmor,skeletonape,puppetmaster"
+            ],
+            "capture_item": true,
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "thedarkchapel",
+            "x": 1128,
+            "y": 228
+          },
+          {
+            "map": "castle",
+            "x": 1613,
+            "y": 364,
             "size": 20
           }
         ]
