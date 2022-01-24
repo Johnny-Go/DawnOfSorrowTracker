@@ -1243,5 +1243,95 @@
         ]
       }
     ]
+  },
+  //The Dark Chapel Eastern Outside Area
+  {
+    "name": "The Dark Chapel",
+    "access_rules": [
+      "height,puppetmaster",
+      "flyingarmor,balore,puppetmaster",
+      //use cinquedia special to sequence break
+      "cinquedia,height,[puppetmaster]",
+      "cinquedia,flyingarmor,balore,[puppetmaster]"
+    ],
+    "color": "#00FF06",
+    "children": [
+      {
+        "name": "Kotetsu",
+        "sections": [
+          {
+            "name": "Kotetsu",
+            "access_rules": ["malphas,puppetmaster", "veryhigh"],
+            "capture_item": true,
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "thedarkchapel",
+            "x": 1646,
+            "y": 82
+          },
+          {
+            "map": "castle",
+            "x": 1731,
+            "y": 328,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "name": "UMA News 3-2",
+        "sections": [
+          {
+            "name": "UMA News 3-2",
+            "access_rules": ["height"],
+            "capture_item": true,
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "thedarkchapel",
+            "x": 1198,
+            "y": 274
+          },
+          {
+            "map": "castle",
+            "x": 1631,
+            "y": 369,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "name": "The Dark Chapel High Potion",
+        "sections": [
+          {
+            "name": "High Potion",
+            "access_rules": [
+              "height,blackpanther",
+              "veryhigh",
+              "malphas,flyingarmor,puppetmaster"
+            ],
+            "capture_item": true,
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "thedarkchapel",
+            "x": 1631,
+            "y": 368
+          },
+          {
+            "map": "castle",
+            "x": 1731,
+            "y": 393,
+            "size": 20
+          }
+        ]
+      }
+    ]
   }
 ]
