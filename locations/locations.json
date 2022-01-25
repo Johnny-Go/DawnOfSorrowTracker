@@ -346,10 +346,13 @@
           }
         ]
       },
-      //below this I'm not sure of the requirements
       {
         "name": "Village High Potion",
-        "access_rules": ["[]"],
+        "access_rules": [
+          "jump",
+          "flyingarmor,puppetmaster",
+          "puppetmaster,skeletonape"
+        ],
         "sections": [
           {
             "name": "High Potion",
@@ -850,7 +853,7 @@
       },
       {
         "name": "Elfin Robe",
-        "access_rules": ["{flyingarmor,balore}", " height"],
+        "access_rules": ["{flyingarmor,balore}", "height"],
         "sections": [
           {
             "name": "Elfin Robe",
@@ -897,7 +900,7 @@
       },
       {
         "name": "Handgun",
-        "access_rules": ["{flyingarmor,balore}"],
+        "access_rules": ["{}"],
         "sections": [
           {
             "name": "Handgun",
@@ -964,6 +967,30 @@
             "map": "castle",
             "x": 1288,
             "y": 538,
+            "size": 20
+          }
+        ]
+      },
+      //you can access this from Garden of Madness
+      {
+        "name": "Demon Guest House High Mind Up",
+        "access_rules": ["height"],
+        "sections": [
+          {
+            "name": "High Mind Up",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "demonguesthouse",
+            "x": 1911,
+            "y": 1517
+          },
+          {
+            "map": "castle",
+            "x": 918,
+            "y": 433,
             "size": 20
           }
         ]
@@ -1105,7 +1132,7 @@
         ],
         "map_locations": [
           {
-            "map": "wizardrylab",
+            "map": "thedarkchapel",
             "x": 713,
             "y": 1210
           },
@@ -1248,10 +1275,10 @@
   {
     "name": "The Dark Chapel",
     "access_rules": [
-      "height,puppetmaster",
-      "flyingarmor,balore,puppetmaster",
+      "puppetmaster",
+      "batcompany",
       //use cinquedia special to sequence break
-      "cinquedia,height,[puppetmaster]",
+      "cinquedia,jump,[puppetmaster]",
       "cinquedia,flyingarmor,balore,[puppetmaster]"
     ],
     "color": "#00FF06",
@@ -1328,6 +1355,580 @@
             "map": "castle",
             "x": 1731,
             "y": 393,
+            "size": 20
+          }
+        ]
+      }
+    ]
+  },
+  //Demon Guest House
+  {
+    "name": "Lower Demon Guest House",
+    "access_rules": [
+      "height,$magicSealTwo",
+      "puppetmaster",
+      "batcompany",
+      "cinquedia,height,towerkey,[puppetmaster],[$magicSealTwo]"
+    ],
+    "color": "#94C700",
+    "children": [
+      {
+        "name": "Demon Guest House Secret Room",
+        "access_rules": ["veryhigh"],
+        "sections": [
+          {
+            "name": "Rune Ring",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "demonguesthouse",
+            "x": 2632,
+            "y": 926
+          },
+          {
+            "map": "castle",
+            "x": 1079,
+            "y": 300,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "name": "$1000 Money Bag",
+        "sections": [
+          {
+            "name": "$1000 Money Bag",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "demonguesthouse",
+            "x": 2120,
+            "y": 1406
+          },
+          {
+            "map": "castle",
+            "x": 961,
+            "y": 410,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "name": "Sit in Chair",
+        "sections": [
+          {
+            "name": "Crown Secret",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "demonguesthouse",
+            "x": 2094,
+            "y": 938
+          },
+          {
+            "map": "castle",
+            "x": 961,
+            "y": 300,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "name": "UMA News 2-2",
+        "sections": [
+          {
+            "name": "UMA News 2-2",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "demonguesthouse",
+            "x": 2142,
+            "y": 739
+          },
+          {
+            "map": "castle",
+            "x": 961,
+            "y": 256,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "name": "$2000 Money Bag",
+        "sections": [
+          {
+            "name": "$2000 Money Bag",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "demonguesthouse",
+            "x": 2120,
+            "y": 543
+          },
+          {
+            "map": "castle",
+            "x": 961,
+            "y": 214,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "name": "Demon Guest House High Potion",
+        "sections": [
+          {
+            "name": "High Potion",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "demonguesthouse",
+            "x": 1130,
+            "y": 797
+          },
+          {
+            "map": "castle",
+            "x": 730,
+            "y": 266,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "name": "Slide Puzzle",
+        "sections": [
+          {
+            "name": "Room 1: Cestus",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "demonguesthouse",
+            "x": 712,
+            "y": 1015
+          },
+          {
+            "map": "castle",
+            "x": 639,
+            "y": 325,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "name": "Slide Puzzle",
+        "sections": [
+          {
+            "name": "Room 5: Cutall",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "demonguesthouse",
+            "x": 712,
+            "y": 1111
+          },
+          {
+            "map": "castle",
+            "x": 639,
+            "y": 346,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "name": "Slide Puzzle",
+        "sections": [
+          {
+            "name": "Room 9: Justaucorps",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "demonguesthouse",
+            "x": 712,
+            "y": 1210
+          },
+          {
+            "map": "castle",
+            "x": 639,
+            "y": 367,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "name": "Slide Puzzle",
+        "sections": [
+          {
+            "name": "Room 8: Turquoise Stud",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "demonguesthouse",
+            "x": 1097,
+            "y": 1111
+          },
+          {
+            "map": "castle",
+            "x": 727,
+            "y": 346,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "name": "Slide Puzzle",
+        "sections": [
+          {
+            "name": "Room 12: Great Sword",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "demonguesthouse",
+            "x": 1097,
+            "y": 1210
+          },
+          {
+            "map": "castle",
+            "x": 727,
+            "y": 367,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "name": "Demon Guest House Mirror",
+        "sections": [
+          {
+            "name": "Ring Mail",
+            "item_count": 1
+          },
+          {
+            "name": "Dracula's Tunic",
+            "access_rules": ["paranoia"],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "demonguesthouse",
+            "x": 1225,
+            "y": 1015
+          },
+          {
+            "map": "castle",
+            "x": 756,
+            "y": 325,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "name": "War Fatigues",
+        "access_rules": ["{veryhigh}", "jump, balore"],
+        "sections": [
+          {
+            "name": "War Fatigues",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "demonguesthouse",
+            "x": 40,
+            "y": 419
+          },
+          {
+            "map": "castle",
+            "x": 486,
+            "y": 188,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "name": "UMA News 2-4",
+        "access_rules": ["{veryhigh}", "jump, balore"],
+        "sections": [
+          {
+            "name": "UMA News 2-4",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "demonguesthouse",
+            "x": 239,
+            "y": 419
+          },
+          {
+            "map": "castle",
+            "x": 530,
+            "y": 188,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "name": "UMA News 2-2",
+        "sections": [
+          {
+            "name": "UMA News 2-2",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "demonguesthouse",
+            "x": 1097,
+            "y": 346
+          },
+          {
+            "map": "castle",
+            "x": 727,
+            "y": 168,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "name": "Magic Seal 3",
+        "sections": [
+          {
+            "name": "Magic Seal 3",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "demonguesthouse",
+            "x": 712,
+            "y": 346
+          },
+          {
+            "map": "castle",
+            "x": 640,
+            "y": 168,
+            "size": 20
+          }
+        ]
+      }
+    ]
+  },
+  //The Condemned Tower
+  {
+    "name": "The Condemned Tower",
+    "access_rules": [
+      "puppetmaster",
+      "batcompany",
+      //use cinquedia special to sequence break
+      "cinquedia,jump,[puppetmaster]",
+      "cinquedia,flyingarmor,balore,[puppetmaster]"
+    ],
+    "color": "#00FFFC",
+    "children": [
+      {
+        "name": "Tasty Meat",
+        "access_rules": ["{jump}", "veryhigh"],
+        "sections": [
+          {
+            "name": "Tasty Meat",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "condemnedtower",
+            "x": 322,
+            "y": 1299
+          },
+          {
+            "map": "castle",
+            "x": 1811,
+            "y": 433,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "name": "Condemned Tower Mind Up",
+        "sections": [
+          {
+            "name": "Mind Up",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "condemnedtower",
+            "x": 625,
+            "y": 1401
+          },
+          {
+            "map": "castle",
+            "x": 1874,
+            "y": 454,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "name": "Silver Earing",
+        "access_rules": ["height"],
+        "sections": [
+          {
+            "name": "Silver Earing",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "condemnedtower",
+            "x": 607,
+            "y": 1090
+          },
+          {
+            "map": "castle",
+            "x": 1874,
+            "y": 390,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "name": "Estoc",
+        "access_rules": ["height"],
+        "sections": [
+          {
+            "name": "Estoc",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "condemnedtower",
+            "x": 343,
+            "y": 511
+          },
+          {
+            "map": "castle",
+            "x": 1811,
+            "y": 257,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "name": "UMA News 2-3",
+        "access_rules": ["height"],
+        "sections": [
+          {
+            "name": "UMA News 2-3",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "condemnedtower",
+            "x": 292,
+            "y": 133
+          },
+          {
+            "map": "castle",
+            "x": 1811,
+            "y": 169,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "name": "Tower Key",
+        "access_rules": ["$magicSealThree"],
+        "children": [
+          {
+            "name": "Tower Key",
+            "access_rules": [
+              "veryhigh",
+              "flyingarmor,puppetmaster",
+              "flyingarmor,malphas",
+              "malphas,puppetmaster",
+              "puppetmaster,skeletonape,malphas"
+            ],
+            "sections": [
+              {
+                "name": "Tower Key",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "condemnedtower",
+                "x": 320,
+                "y": 54
+              },
+              {
+                "map": "castle",
+                "x": 1811,
+                "y": 145,
+                "size": 20
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  //The Condemned Tower
+  {
+    "name": "The Condemned Tower",
+    "access_rules": [
+      "puppetmaster,towerkey",
+      "batcompany,towerkey",
+      //use cinquedia special to sequence break
+      "cinquedia,puppetmaster,[towerkey]",
+      "cinquedia,batcompany,[towerkey]",
+      "cinquedia,jump,magicsealtwo,[puppetmaster],[towerkey]",
+      "cinquedia,jump,magicsealtwo,[batcompany],[towerkey]"
+    ],
+    "color": "#9BCEFD",
+    "children": [
+      {
+        "name": "Shaman Ring",
+        "sections": [
+          {
+            "name": "Shaman Ring",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "cursedclocktower",
+            "x": 1738,
+            "y": 919
+          },
+          {
+            "map": "castle",
+            "x": 1665,
+            "y": 234,
             "size": 20
           }
         ]

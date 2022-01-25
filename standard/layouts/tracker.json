@@ -90,17 +90,17 @@
               }
             },
             {
-              "title": "Demon Guest House",
-              "content": {
-                "type": "map",
-                "maps": ["demonguesthouse"]
-              }
-            },
-            {
               "title": "The Dark Chapel",
               "content": {
                 "type": "map",
                 "maps": ["thedarkchapel"]
+              }
+            },
+            {
+              "title": "Demon Guest House",
+              "content": {
+                "type": "map",
+                "maps": ["demonguesthouse"]
               }
             },
             {
@@ -232,17 +232,17 @@
               }
             },
             {
-              "title": "Demon Guest House",
-              "content": {
-                "type": "map",
-                "maps": ["demonguesthouse"]
-              }
-            },
-            {
               "title": "The Dark Chapel",
               "content": {
                 "type": "map",
                 "maps": ["thedarkchapel"]
+              }
+            },
+            {
+              "title": "Demon Guest House",
+              "content": {
+                "type": "map",
+                "maps": ["demonguesthouse"]
               }
             },
             {
