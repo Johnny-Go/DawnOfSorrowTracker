@@ -202,7 +202,7 @@
   },
   // Red Wall Soul Two
   {
-    "name": "Red Wall Soul 2",
+    "name": "First Paranoia Red Wall",
     "type": "progressive_toggle",
     "stages": [
       {
@@ -219,7 +219,7 @@
   },
   // Red Wall Soul Three
   {
-    "name": "Red Wall Soul 3",
+    "name": "Second Paranoia Red Wall",
     "type": "progressive_toggle",
     "stages": [
       {
@@ -236,7 +236,7 @@
   },
   // Red Wall Soul Four
   {
-    "name": "Red Wall Soul 4",
+    "name": "Third Paranoia Red Wall",
     "type": "progressive_toggle",
     "stages": [
       {
@@ -248,6 +248,30 @@
         "disabled_img": "images/RedWallSoul4.png",
         "disabled_img_mods": "",
         "codes": "redwallsoulfour,redwallsoulfourfound"
+      }
+    ]
+  },
+  // Paranoia Red Wall Souls
+  {
+    "name": "Paranoia Red Wall Souls",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/ParanoiaRedWallSoulsNone.png",
+        "codes": "paranoiaredwallsouls"
+      },
+      {
+        "img": "images/ParanoiaRedWallSoulsFirst.png",
+        "codes": "paranoiaredwallsouls"
+      },
+      {
+        "img": "images/ParanoiaRedWallSoulsSecond.png",
+        "codes": "paranoiaredwallsouls"
+      },
+      {
+        "img": "images/ParanoiaRedWallSoulsThird.png",
+        "codes": "paranoiaredwallsouls,paranoiaredwallsoulsfound"
       }
     ]
   },

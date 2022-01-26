@@ -598,7 +598,7 @@
   //More The Lost Village items, very restrictive to access
   {
     "name": "Under the Village",
-    "color": "#32CCCE",
+    "color": "#FF9800",
     "access_rules": ["movement"],
     "children": [
       {
@@ -900,7 +900,19 @@
       },
       {
         "name": "Handgun",
-        "access_rules": ["{}"],
+        "access_rules": [
+          "{}",
+          "puppetmaster,towerkey",
+          "batcompany,towerkey",
+          //use cinquedia special to sequence break via Demon Guest House
+          "cinquedia,puppetmaster,[towerkey]",
+          "cinquedia,batcompany,[towerkey]",
+          //use cinquedia special to sequence break via Dario
+          "cinquedia,jump,$magicSealTwo,[puppetmaster],[towerkey]",
+          "cinquedia,jump,$magicSealTwo,[batcompany],[towerkey]",
+          "cinquedia,jump,succubus,[puppetmaster],[towerkey]",
+          "cinquedia,jump,succubus,[batcompany],[towerkey]"
+        ],
         "sections": [
           {
             "name": "Handgun",
@@ -974,6 +986,7 @@
       //you can access this from Garden of Madness
       {
         "name": "Demon Guest House High Mind Up",
+        "color": "#94C700",
         "access_rules": ["height"],
         "sections": [
           {
@@ -1096,7 +1109,11 @@
       },
       {
         "name": "Halberd",
-        "access_rules": ["redwallsoulone,redwallsoulonefound"],
+        "access_rules": [
+          "redwallsoulonefound",
+          //use cinquedia and succubus soul to tek through wall
+          "cinquedia,succubus,[redwallsoulonefound]"
+        ],
         "sections": [
           {
             "name": "Halberd",
@@ -1616,7 +1633,7 @@
         ]
       },
       {
-        "name": "Demon Guest House Mirror",
+        "name": "Lower Demon Guest House Mirror",
         "sections": [
           {
             "name": "Ring Mail",
@@ -1644,7 +1661,7 @@
       },
       {
         "name": "War Fatigues",
-        "access_rules": ["{veryhigh}", "jump, balore"],
+        "access_rules": ["{veryhigh}", "jump,balore"],
         "sections": [
           {
             "name": "War Fatigues",
@@ -1667,7 +1684,7 @@
       },
       {
         "name": "UMA News 2-4",
-        "access_rules": ["{veryhigh}", "jump, balore"],
+        "access_rules": ["{veryhigh}", "jump,balore"],
         "sections": [
           {
             "name": "UMA News 2-4",
@@ -1728,6 +1745,86 @@
             "map": "castle",
             "x": 640,
             "y": 168,
+            "size": 20
+          }
+        ]
+      }
+    ]
+  },
+  //Demon Guest House
+  {
+    "name": "Upper Demon Guest House",
+    "access_rules": [
+      "puppetmaster,hippogryph,towerkey,$magicSealFour",
+      "batcompany,towerkey,$magicSealFour",
+      //sequence break with Golden Axe via Demon Guest House lower area
+      "goldenaxe,height,$magicSealTwo,[puppetmaster],[Hippogryph],[towerkey],[$magicSealFour]",
+      "goldenaxe,height,$magicSealTwo,[batcompany],[towerkey],[$magicSealFour]",
+      "goldenaxe,puppetmaster,[Hippogryph],[towerkey],[$magicSealFour]",
+      "goldenaxe,puppetmaster,[batcompany],[towerkey],[$magicSealFour]",
+      "goldenaxe,batcompany,[towerkey],[$magicSealFour]",
+      "goldenaxe,cinquedia,height,towerkey,[puppetmaster],[hippogryph],[$magicSealFour]",
+      "goldenaxe,cinquedia,height,towerkey,[batcompany],[$magicSealFour]",
+      //via Demon Guest House -> Garden of Madness -> Cursed Clock Tower use cinquedia special to sequence break
+      "cinquedia,puppetmaster,hippogryph,[towerkey],[$magicSealFour]",
+      "cinquedia,batcompany,[towerkey],[$magicSealFour]",
+      //via Garden of Madness -> Cursed Clock Tower use cinquedia special to sequence break
+      "cinquedia,hippogryph,$magicSealTwo,[puppetmaster],[towerkey],[$magicSealFour]",
+      //via Condemned Tower use succubus + cinquedia special to sequence break
+      "cinquedia,hippogryph,succubus,[puppetmaster],[towerkey],[$magicSealFour]"
+    ],
+    "color": "#94C700",
+    "children": [
+      {
+        "name": "Upper Demon Guest House Mirror",
+        "access_rules": [
+          "paranoia,redwallsoultwofound,redwallsoulthreefound,redwallsoulfourfound",
+          //use cinquedia and succubus soul to get through wall
+          "cinquedia,succubus,[paranoia],[redwallsoultwofound],[redwallsoulthreefound],[redwallsoulfourfound]"
+        ],
+        "sections": [
+          {
+            "name": "Mana Prism",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "demonguesthouse",
+            "x": 969,
+            "y": 160
+          },
+          {
+            "map": "castle",
+            "x": 699,
+            "y": 124,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "name": "Olrox's Suit",
+        "access_rules": [
+          "$magicSealFour,redwallsoultwofound,redwallsoulthreefound,redwallsoulfourfound",
+          //use cinquedia and succubus soul to get through wall
+          "cinquedia,succubus,[$magicSealFour],[redwallsoultwofound],[redwallsoulthreefound],[redwallsoulfourfound]"
+        ],
+        "sections": [
+          {
+            "name": "Olrox's Suit",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "demonguesthouse",
+            "x": 712,
+            "y": 160
+          },
+          {
+            "map": "castle",
+            "x": 640,
+            "y": 124,
             "size": 20
           }
         ]
@@ -1897,17 +1994,22 @@
       }
     ]
   },
-  //The Condemned Tower
+  //Cursed Clock Tower
   {
-    "name": "The Condemned Tower",
+    "name": "Cursed Clock Tower",
     "access_rules": [
       "puppetmaster,towerkey",
       "batcompany,towerkey",
-      //use cinquedia special to sequence break
+      //via Demon Guest House -> Garden of Madness use cinquedia special to sequence break
       "cinquedia,puppetmaster,[towerkey]",
       "cinquedia,batcompany,[towerkey]",
-      "cinquedia,jump,magicsealtwo,[puppetmaster],[towerkey]",
-      "cinquedia,jump,magicsealtwo,[batcompany],[towerkey]"
+      //via Garden of Madness use cinquedia special to sequence break
+      "cinquedia,jump,$magicSealTwo,[puppetmaster],[towerkey]",
+      "cinquedia,jump,$magicSealTwo,[batcompany],[towerkey]",
+      //via Condemned Tower use succubus + cinquedia special to sequence break
+      "cinquedia,jump,succubus,[puppetmaster],[towerkey]",
+      "cinquedia,jump,succubus,[batcompany],[towerkey]"
+      //via Pinnacle use Golden Axe special to sequence break into Upper Demon Guest House
     ],
     "color": "#9BCEFD",
     "children": [
@@ -1929,6 +2031,353 @@
             "map": "castle",
             "x": 1665,
             "y": 234,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "name": "Army Jacket",
+        "sections": [
+          {
+            "name": "Army Jacket",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "cursedclocktower",
+            "x": 46,
+            "y": 1114
+          },
+          {
+            "map": "castle",
+            "x": 1286,
+            "y": 278,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "name": "Cursed Clock Tower Mirror",
+        "sections": [
+          {
+            "name": "Scale Mail",
+            "item_count": 1
+          },
+          {
+            "name": "Platinum Stud",
+            "access_rules": ["Paranoia"],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "cursedclocktower",
+            "x": 1484,
+            "y": 538
+          },
+          {
+            "map": "castle",
+            "x": 1606,
+            "y": 146,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "name": "Magic Seal 4",
+        "sections": [
+          {
+            "name": "Magic Seal 4",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "cursedclocktower",
+            "x": 1484,
+            "y": 637
+          },
+          {
+            "map": "castle",
+            "x": 1606,
+            "y": 170,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "name": "UMA News 3-3",
+        "sections": [
+          {
+            "name": "UMA News 3-3",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "cursedclocktower",
+            "x": 1581,
+            "y": 733
+          },
+          {
+            "map": "castle",
+            "x": 1636,
+            "y": 189,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "name": "Kneel in safe place on spike block",
+        "sections": [
+          {
+            "name": "Konami Man",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "cursedclocktower",
+            "x": 1472,
+            "y": 323
+          },
+          {
+            "map": "castle",
+            "x": 1606,
+            "y": 103,
+            "size": 20
+          }
+        ]
+      }
+    ]
+  },
+  //The Pinnacle
+  {
+    "name": "The Pinnacle",
+    "access_rules": [
+      "puppetmaster,hippogryph,towerkey,$magicSealFour",
+      "batcompany,towerkey,$magicSealFour",
+      //via Demon Guest House -> Garden of Madness -> Cursed Clock Tower use cinquedia special to sequence break
+      "cinquedia,puppetmaster,hippogryph,[towerkey],[$magicSealFour]",
+      "cinquedia,batcompany,[towerkey],[$magicSealFour]",
+      //via Garden of Madness -> Cursed Clock Tower use cinquedia special to sequence break
+      "cinquedia,hippogryph,$magicSealTwo,[puppetmaster],[towerkey],[$magicSealFour]",
+      //via Condemned Tower use succubus + cinquedia special to sequence break
+      "cinquedia,hippogryph,succubus,[puppetmaster],[towerkey],[$magicSealFour]",
+      //via Demon Guest House use Golden Axe special to sequence break into Upper Demon Guest House
+      "goldenaxe,height,$magicSealTwo,[puppetmaster],[hippogryph],[towerkey],[$magicSealFour]",
+      "goldenaxe,height,$magicSealTwo,[batcompany],[towerkey],[$magicSealFour]",
+      "goldenaxe,puppetmaster,[hippogryph],[towerkey],[$magicSealFour]",
+      "goldenaxe,puppetmaster,[batcompany],[towerkey],[$magicSealFour]",
+      "goldenaxe,batcompany,[towerkey],[$magicSealFour]",
+      "goldenaxe,cinquedia,height,towerkey,[batcompany],[$magicSealFour]",
+      "goldenaxe,cinquedia,height,towerkey,[puppetmaster],[hippogryph],[$magicSealFour]"
+    ],
+    "color": "#CB9AFF",
+    "children": [
+      {
+        "name": "The Pinnacle Truffle Secret Room",
+        "sections": [
+          {
+            "name": "Truffle",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "thepinnacle",
+            "x": 841,
+            "y": 1124
+          },
+          {
+            "map": "castle",
+            "x": 1138,
+            "y": 255,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "name": "The Pinnacle Durandal Secret Room",
+        "access_rules": ["jump,puppetmaster", "veryhigh"],
+        "sections": [
+          {
+            "name": "Durandal",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "thepinnacle",
+            "x": 457,
+            "y": 250
+          },
+          {
+            "map": "castle",
+            "x": 1051,
+            "y": 57,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "name": "The Pinnacle Mana Prism",
+        "access_rules": ["jump"],
+        "sections": [
+          {
+            "name": "Mana Prism",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "thepinnacle",
+            "x": 1045,
+            "y": 446
+          },
+          {
+            "map": "castle",
+            "x": 1186,
+            "y": 101,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "name": "Lance",
+        "access_rules": ["jump"],
+        "sections": [
+          {
+            "name": "Lance",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "thepinnacle",
+            "x": 1624,
+            "y": 440
+          },
+          {
+            "map": "castle",
+            "x": 1317,
+            "y": 100,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "name": "East Three Chest Room",
+        "access_rules": ["veryhigh"],
+        "sections": [
+          {
+            "name": "Three Chests",
+            "item_count": 3
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "thepinnacle",
+            "x": 1881,
+            "y": 159
+          },
+          {
+            "map": "castle",
+            "x": 1372,
+            "y": 36,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "name": "West Three Chest Room",
+        "access_rules": ["veryhigh"],
+        "sections": [
+          {
+            "name": "Three Chests",
+            "item_count": 3
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "thepinnacle",
+            "x": 1115,
+            "y": 154
+          },
+          {
+            "map": "castle",
+            "x": 1197,
+            "y": 36,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "name": "Dracula's Attic",
+        "access_rules": ["veryhigh"],
+        "sections": [
+          {
+            "name": "Satan's Ring",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "thepinnacle",
+            "x": 319,
+            "y": 58
+          },
+          {
+            "map": "castle",
+            "x": 1022,
+            "y": 14,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "name": "Dracula's Attic",
+        "access_rules": ["veryhigh"],
+        "sections": [
+          {
+            "name": "Fragarach",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "thepinnacle",
+            "x": 478,
+            "y": 58
+          },
+          {
+            "map": "castle",
+            "x": 1051,
+            "y": 14,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "name": "Magic Seal 5",
+        "access_rules": ["veryhigh,$magicSealFour"],
+        "sections": [
+          {
+            "name": "Magic Seal 5",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "thepinnacle",
+            "x": 71,
+            "y": 164
+          },
+          {
+            "map": "castle",
+            "x": 961,
+            "y": 36,
             "size": 20
           }
         ]
