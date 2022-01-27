@@ -11,7 +11,7 @@
     "name": "Bat Form or Bat Company",
     "type": "toggle",
     "img": "images/BatCompany.png",
-    "codes": "movement, jump, height, veryhigh, batcompany"
+    "codes": "movement, jump, height, veryhigh, batcompany, smallbody"
   },
   // Malphas
   {
@@ -25,21 +25,21 @@
     "name": "Puppet Master",
     "type": "toggle",
     "img": "images/PuppetMaster.png",
-    "codes": "movement, height, puppetmaster"
+    "codes": "movement, height, puppetmaster, smallbody"
   },
   // Flying Armor
   {
     "name": "Flying Armor",
     "type": "toggle",
     "img": "images/FlyingArmor.png",
-    "codes": "movement, flyingarmor"
+    "codes": "movement, sideways, flyingarmor"
   },
   // Black Panther
   {
     "name": "Black Panther",
     "type": "toggle",
     "img": "images/BlackPanther.png",
-    "codes": "movement, blackpanther"
+    "codes": "movement, sideways, blackpanther"
   },
   // Balore
   {

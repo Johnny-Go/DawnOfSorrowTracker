@@ -778,7 +778,7 @@
   //Garden of Madness
   {
     "name": "Garden of Madness",
-    "access_rules": ["height", "flyingarmor,balore"],
+    "access_rules": ["height", "movement,balore"],
     "color": "#FEFF00",
     "children": [
       {
@@ -853,7 +853,7 @@
       },
       {
         "name": "Elfin Robe",
-        "access_rules": ["{flyingarmor,balore}", "height"],
+        "access_rules": ["{movement,balore}", "height"],
         "sections": [
           {
             "name": "Elfin Robe",
@@ -961,7 +961,7 @@
         "access_rules": [
           "cinquedia,[rahab],height",
           "rahab,height",
-          "flyingarmor,balore,rahab,blackpanther"
+          "movement,balore,rahab,blackpanther"
         ],
         "sections": [
           {
@@ -1010,15 +1010,356 @@
       }
     ]
   },
+  //Subterranean Hell
+  //Test of Strength ignored since these items don't appear randomized
+  {
+    "name": "Subterranean Hell",
+    "access_rules": [
+      "height,rahab",
+      "movement,balore,rahab",
+      "cinquedia,height,[rahab]",
+      "cinquedia,flyingarmor,[balore],[rahab]",
+      "cinquedia,blackpanther,[height],[rahab]",
+      "cinquedia,blackpanther,[flyingarmor],[balore],[rahab]"
+    ],
+    "color": "#FFCC9A",
+    "children": [
+      {
+        "name": "UMA News 1-3",
+        "access_rules": ["height", "movement,height", "movement,balore,rahab"],
+        "sections": [
+          {
+            "name": "UMA News 1-3",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "subterraneanhell",
+            "x": 2141,
+            "y": 335
+          },
+          {
+            "map": "castle",
+            "x": 1346,
+            "y": 629,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "name": "Subterranean Hell $2000 Bag",
+        "access_rules": ["height", "movement,height", "movement,balore,rahab"],
+        "sections": [
+          {
+            "name": "$2000 Bag",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "subterraneanhell",
+            "x": 1885,
+            "y": 647
+          },
+          {
+            "map": "castle",
+            "x": 1285,
+            "y": 695,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "name": "Mushroom Below Warp Room",
+        "access_rules": ["height", "movement,height", "movement,balore,rahab"],
+        "sections": [
+          {
+            "name": "Mushroom",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "subterraneanhell",
+            "x": 1325,
+            "y": 721
+          },
+          {
+            "map": "castle",
+            "x": 1165,
+            "y": 717,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "name": "Tall Room Lower Mushroom",
+        "access_rules": ["height", "movement"],
+        "sections": [
+          {
+            "name": "Mushroom",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "subterraneanhell",
+            "x": 994,
+            "y": 1033
+          },
+          {
+            "map": "castle",
+            "x": 1084,
+            "y": 786,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "name": "Tall Room Amanita",
+        "access_rules": ["height", "movement"],
+        "sections": [
+          {
+            "name": "Amanita",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "subterraneanhell",
+            "x": 994,
+            "y": 908
+          },
+          {
+            "map": "castle",
+            "x": 1084,
+            "y": 759,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "name": "Tall Room Upper Mushroom",
+        "access_rules": ["{}, height"],
+        "sections": [
+          {
+            "name": "Mushroom",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "subterraneanhell",
+            "x": 942,
+            "y": 750
+          },
+          {
+            "map": "castle",
+            "x": 1070,
+            "y": 724,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "name": "Subterranean Hell Secret Room",
+        "access_rules": [
+          "height,jump",
+          "height,flyingarmor",
+          "height,blackpanther"
+        ],
+        "sections": [
+          {
+            "name": "Eversing",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "subterraneanhell",
+            "x": 701,
+            "y": 727
+          },
+          {
+            "map": "castle",
+            "x": 1021,
+            "y": 718,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "name": "Rusty Tin Food",
+        "access_rules": ["rahab,heigh,"],
+        "sections": [
+          {
+            "name": "Rusty Tin Food",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "subterraneanhell",
+            "x": 3933,
+            "y": 546
+          },
+          {
+            "map": "castle",
+            "x": 1756,
+            "y": 672,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "name": "Subterranean Hell High Mind Up",
+        "access_rules": ["rahab,height"],
+        "sections": [
+          {
+            "name": "High Mind Up",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "subterraneanhell",
+            "x": 3498,
+            "y": 406
+          },
+          {
+            "map": "castle",
+            "x": 1663,
+            "y": 643,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "name": "Chain Mail",
+        "access_rules": ["rahab,height"],
+        "sections": [
+          {
+            "name": "Chain Mail",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "subterraneanhell",
+            "x": 3598,
+            "y": 241
+          },
+          {
+            "map": "castle",
+            "x": 1683,
+            "y": 606,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "name": "Subterranean Hell Underwater Money Bag",
+        "access_rules": ["rahab,height"],
+        "sections": [
+          {
+            "name": "$2000 Bag",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "subterraneanhell",
+            "x": 3940,
+            "y": 347
+          },
+          {
+            "map": "castle",
+            "x": 1758,
+            "y": 633,
+            "size": 20
+          }
+        ]
+      }
+    ]
+  },
+  //Silenced Ruins
+  {
+    "name": "Silenced Ruins",
+    "access_rules": [
+      "height,rahab,zephyr",
+      "flyingarmor,balore,rahab,zephyr,[height]",
+      "flyingarmor,balore,rahab,zephyr,[blackpanther]",
+      "cinquedia,height,[rahab],[zephyr]",
+      "cinquedia,flyingarmor,zephyr,[balore],[rahab],[height]",
+      "cinquedia,flyingarmor,zephyr,[balore],[rahab],[blackpanther]",
+      "cinquedia,blackpanther,zephyr,[height],[rahab]",
+      "cinquedia,blackpanther,zephyr,[flyingarmor],[balore],[rahab],"
+    ],
+    "color": "#CCFFCF",
+    "children": [
+      {
+        "name": "Silenced Ruins Mirror",
+        "access_rules": ["height"],
+        "sections": [
+          {
+            "name": "Mana Prism",
+            "item_count": 1
+          },
+          {
+            "name": "Super Potion",
+            "access_rules": ["paranoia"],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "silencedruins",
+            "x": 699,
+            "y": 56
+          },
+          {
+            "map": "castle",
+            "x": 1372,
+            "y": 718,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "name": "Rare Ring",
+        "access_rules": ["balore"],
+        "sections": [
+          {
+            "name": "Rare Ring",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "silencedruins",
+            "x": 289,
+            "y": 613
+          },
+          {
+            "map": "castle",
+            "x": 1284,
+            "y": 851,
+            "size": 20
+          }
+        ]
+      }
+    ]
+  },
   //The Dark Chapel
   {
     "name": "The Dark Chapel",
-    "access_rules": ["height", "flyingarmor,balore"],
+    "access_rules": ["height", "movemetn,balore"],
     "color": "#00FF06",
     "children": [
       {
         "name": "Long Sword",
-        "access_rules": ["{flyingarmor,balore}", "height"],
+        "access_rules": ["{movement,balore}", "height"],
         "sections": [
           {
             "name": "Long Sword",
@@ -1163,7 +1504,7 @@
       },
       {
         "name": "Power Belt",
-        "access_rules": ["{flyingarmor,balore}", "height"],
+        "access_rules": ["{movement,balore}", "height"],
         "sections": [
           {
             "name": "Power Belt",
@@ -1235,7 +1576,7 @@
         "sections": [
           {
             "name": "High Mind Up",
-            "access_rules": ["{flyingarmor,balore}", "height", "blackpanther"],
+            "access_rules": ["{movement,balore}", "height", "blackpanther"],
             "capture_item": true,
             "item_count": 1
           }
@@ -1261,7 +1602,7 @@
           {
             "name": "Hoop Earing",
             "access_rules": [
-              "{flyingarmor,balore}",
+              "{movement,balore}",
               "veryhigh",
               "blackpanther",
               "malphas,[puppetmaster]",
@@ -1296,7 +1637,7 @@
       "batcompany",
       //use cinquedia special to sequence break
       "cinquedia,jump,[puppetmaster]",
-      "cinquedia,flyingarmor,balore,[puppetmaster]"
+      "cinquedia,movement,balore,[puppetmaster]"
     ],
     "color": "#00FF06",
     "children": [
@@ -1839,7 +2180,7 @@
       "batcompany",
       //use cinquedia special to sequence break
       "cinquedia,jump,[puppetmaster]",
-      "cinquedia,flyingarmor,balore,[puppetmaster]"
+      "cinquedia,movement,balore,[puppetmaster]"
     ],
     "color": "#00FFFC",
     "children": [
@@ -1998,18 +2339,13 @@
   {
     "name": "Cursed Clock Tower",
     "access_rules": [
-      "puppetmaster,towerkey",
-      "batcompany,towerkey",
+      "smallbody,towerkey",
       //via Demon Guest House -> Garden of Madness use cinquedia special to sequence break
-      "cinquedia,puppetmaster,[towerkey]",
-      "cinquedia,batcompany,[towerkey]",
+      "cinquedia,smallbody,[towerkey]",
       //via Garden of Madness use cinquedia special to sequence break
-      "cinquedia,jump,$magicSealTwo,[puppetmaster],[towerkey]",
-      "cinquedia,jump,$magicSealTwo,[batcompany],[towerkey]",
+      "cinquedia,jump,$magicSealTwo,[smallbody],[towerkey]",
       //via Condemned Tower use succubus + cinquedia special to sequence break
-      "cinquedia,jump,succubus,[puppetmaster],[towerkey]",
-      "cinquedia,jump,succubus,[batcompany],[towerkey]"
-      //via Pinnacle use Golden Axe special to sequence break into Upper Demon Guest House
+      "cinquedia,jump,succubus,[smallbody],[towerkey]"
     ],
     "color": "#9BCEFD",
     "children": [
@@ -2378,6 +2714,65 @@
             "map": "castle",
             "x": 961,
             "y": 36,
+            "size": 20
+          }
+        ]
+      }
+    ]
+  },
+  //The Abyss
+  {
+    "name": "The Abyss",
+    "access_rules": [
+      "jump,smallbody,minastalisman,$magicSealFive",
+      "blackpanther,smallbody,minastalisman,$magicSealFive",
+      //use cinquedia special to sequence break
+      "cinquedia,jump,[smallbody],[minastalisman],[$magicSealFive]",
+      "cinquedia,blackpanther,balore,[smallbody],[minastalisman],[$magicSealFive]"
+    ],
+    "color": "#FA04FB",
+    "children": [
+      {
+        "name": "Chaos Ring, maybe need 100% souls",
+        "access_rules": ["jump"],
+        "sections": [
+          {
+            "name": "Chaos Ring",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "theabyss",
+            "x": 38,
+            "y": 1182
+          },
+          {
+            "map": "castle",
+            "x": 12,
+            "y": 276,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "name": "Hippogryph Soul",
+        "sections": [
+          {
+            "name": "Hippogryph Soul",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "theabyss",
+            "x": 237,
+            "y": 731
+          },
+          {
+            "map": "castle",
+            "x": 47,
+            "y": 170,
             "size": 20
           }
         ]
