@@ -1141,7 +1141,7 @@
       },
       {
         "name": "Tall Room Upper Mushroom",
-        "access_rules": ["{}, height"],
+        "access_rules": ["{}", "height"],
         "sections": [
           {
             "name": "Mushroom",

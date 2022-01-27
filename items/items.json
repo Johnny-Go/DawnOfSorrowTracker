@@ -275,11 +275,39 @@
       }
     ]
   },
-  // Claimh Solais
+  // Generic Weapon Placeholder
   {
-    "name": "Claimh Solais",
+    "name": "Weapon",
     "type": "toggle",
     "img": "images/ClaimhSolais.png",
-    "codes": "claimhsolais"
+    "codes": "weapon"
+  },
+  // Generic Armor Placeholder
+  {
+    "name": "Armor",
+    "type": "toggle",
+    "img": "images/Eversing.png",
+    "codes": "armor"
+  },
+  // Generic Accessory Placeholder
+  {
+    "name": "Accessory",
+    "type": "toggle",
+    "img": "images/ChaosRing.png",
+    "codes": "accessory"
+  },
+  // Generic Item Placeholder
+  {
+    "name": "Item",
+    "type": "toggle",
+    "img": "images/SuperPotion.png",
+    "codes": "item"
+  },
+  // Soul Pedestal
+  {
+    "name": "Soul Pedestal",
+    "type": "toggle",
+    "img": "images/SoulPedestal.png",
+    "codes": "soulpedestal"
   }
 ]
