@@ -899,6 +899,29 @@
         ]
       },
       {
+        "name": "Doppelganger",
+        "access_rules": ["veryhigh"],
+        "sections": [
+          {
+            "name": "Doppelganger",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "gardenofmadness",
+            "x": 958,
+            "y": 427
+          },
+          {
+            "map": "castle",
+            "x": 1196,
+            "y": 413,
+            "size": 20
+          }
+        ]
+      },
+      {
         "name": "Handgun",
         "access_rules": [
           "{}",
@@ -1354,7 +1377,7 @@
   //The Dark Chapel
   {
     "name": "The Dark Chapel",
-    "access_rules": ["height", "movemetn,balore"],
+    "access_rules": ["height", "movement,balore"],
     "color": "#00FF06",
     "children": [
       {
@@ -1754,6 +1777,28 @@
         ]
       },
       {
+        "name": "Mina's Talisman",
+        "sections": [
+          {
+            "name": "Mina's Talisman",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "demonguesthouse",
+            "x": 2120,
+            "y": 1020
+          },
+          {
+            "map": "castle",
+            "x": 961,
+            "y": 324,
+            "size": 20
+          }
+        ]
+      },
+      {
         "name": "$1000 Money Bag",
         "sections": [
           {
@@ -2002,10 +2047,11 @@
       },
       {
         "name": "War Fatigues",
-        "access_rules": ["{veryhigh}", "jump,balore"],
+        "access_rules": ["{veryhigh}", "veryhigh,balore"],
         "sections": [
           {
             "name": "War Fatigues",
+            "capture_item": true,
             "item_count": 1
           }
         ],
@@ -2025,10 +2071,11 @@
       },
       {
         "name": "UMA News 2-4",
-        "access_rules": ["{veryhigh}", "jump,balore"],
+        "access_rules": ["{veryhigh}", "veryhigh,balore"],
         "sections": [
           {
             "name": "UMA News 2-4",
+            "capture_item": true,
             "item_count": 1
           }
         ],
