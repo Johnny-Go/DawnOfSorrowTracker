@@ -377,7 +377,7 @@
   },
   //Wizardry Lab
   {
-    "name": "Wizardy Lab",
+    "name": "Wizardry Lab",
     "color": "#32CCCE",
     "access_rules": ["movement"],
     "children": [
@@ -1214,7 +1214,7 @@
       },
       {
         "name": "Rusty Tin Food",
-        "access_rules": ["rahab,heigh,"],
+        "access_rules": ["rahab,height"],
         "sections": [
           {
             "name": "Rusty Tin Food",
@@ -2780,7 +2780,7 @@
     "color": "#FA04FB",
     "children": [
       {
-        "name": "Chaos Ring, maybe need 100% souls",
+        "name": "Chaos Ring",
         "access_rules": ["jump"],
         "sections": [
           {
