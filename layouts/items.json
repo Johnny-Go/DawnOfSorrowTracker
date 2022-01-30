@@ -44,5 +44,15 @@
         ]
       }
     ]
+  },
+  "tracker_capture_item": {
+    "type": "container",
+    "content": {
+      "type": "itemgrid",
+      "h_alignment": "center",
+      "item_margin": "3,3",
+      "item_size": 48,
+      "rows": [["weapon", "armor", "accessory", "item", "soulpedestal"]]
+    }
   }
 }

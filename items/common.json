@@ -1,0 +1,9 @@
+[
+  {
+    "name": "Magic Seals",
+    "type": "toggle",
+    "img": "images/MagicSealsRequired.png",
+    "disabled_img": "images/MagicSealsDisabled.png",
+    "codes": "magicseals,magicsealsrequired"
+  }
+]

@@ -1,0 +1,80 @@
+[
+  {
+    "name": "castle",
+    "location_size": 40,
+    "location_border_thickness": 5,
+    "img": "images/DawnOfSorrowFullCastle2.png"
+  },
+  {
+    "name": "thelostvillage",
+    "location_size": 40,
+    "location_border_thickness": 5,
+    "img": "images/TheLostVillage.png"
+  },
+  {
+    "name": "wizardrylab",
+    "location_size": 40,
+    "location_border_thickness": 5,
+    "img": "images/WizardryLab.png"
+  },
+  {
+    "name": "gardenofmadness",
+    "location_size": 40,
+    "location_border_thickness": 5,
+    "img": "images/GardenOfMadness.png"
+  },
+  {
+    "name": "demonguesthouse",
+    "location_size": 40,
+    "location_border_thickness": 5,
+    "img": "images/DemonGuestHouse.png"
+  },
+  {
+    "name": "thedarkchapel",
+    "location_size": 40,
+    "location_border_thickness": 5,
+    "img": "images/TheDarkChapel.png"
+  },
+  {
+    "name": "condemnedtower",
+    "location_size": 40,
+    "location_border_thickness": 5,
+    "img": "images/CondemnedTower.png"
+  },
+  {
+    "name": "cursedclocktower",
+    "location_size": 40,
+    "location_border_thickness": 5,
+    "img": "images/CursedClockTower.png"
+  },
+  {
+    "name": "thepinnacle",
+    "location_size": 40,
+    "location_border_thickness": 5,
+    "img": "images/ThePinnacle.png"
+  },
+  {
+    "name": "subterraneanhell",
+    "location_size": 40,
+    "location_border_thickness": 5,
+    "img": "images/SubterraneanHell.png"
+  },
+  {
+    "name": "silencedruins",
+    "location_size": 40,
+    "location_border_thickness": 5,
+    "img": "images/SilencedRuins.png"
+  },
+  {
+    "name": "mineofjudgement",
+    "location_size": 40,
+    "location_border_thickness": 5,
+    "img": "images/MineOfJudgement.png"
+  },
+  {
+    "name": "theabyss",
+    "location_size": 40,
+    "location_border_thickness": 5,
+    "img": "images/TheAbyss.png"
+  }
+]
