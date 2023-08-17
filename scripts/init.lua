@@ -15,3 +15,9 @@ Tracker:AddLayouts("layouts/items.json")
 Tracker:AddLayouts("layouts/tracker.json")
 
 Tracker:AddLayouts("layouts/broadcast.json")
+-- Select a broadcast view layout based on whether the current variant is keysanity or not
+if not (string.find(Tracker.ActiveVariantUID, "all_souls_items_only")) then
+  Tracker:AddLayouts("layouts/standard_broadcast.json")
+else
+  Tracker:AddLayouts("layouts/all_souls_items_only_broadcast.json")
+end

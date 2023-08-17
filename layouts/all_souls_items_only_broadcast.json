@@ -1,0 +1,55 @@
+{
+  "tracker_broadcast": {
+    "type": "array",
+    "dropshadow": true,
+    "margin": "10",
+    "content": [
+      {
+        "type": "array",
+        "orientation": "vertical",
+        "content": [
+          {
+            "type": "itemgrid",
+            "h_alignment": "center",
+            "item_margin": "3,3",
+            "item_size": 72,
+            "rows": [
+              [
+                "flyingarmor",
+                "balore",
+                "malphas",
+                "puppetmaster",
+                "magicsealtwo",
+                "redwallsoulone"
+              ],
+              [
+                "rahab",
+                "zephyr",
+                "batcompany",
+                "paranoia",
+                "magicsealthree",
+                "redwallsoultwo"
+              ],
+              [
+                "hippogryph",
+                "blackpanther",
+                "flyinghumanoid",
+                "skeletonapeboneark",
+                "magicsealfour",
+                "redwallsoulthree"
+              ],
+              [
+                "imp",
+                "malacoda",
+                "towerkey",
+                "minastalisman",
+                "magicsealfive",
+                "redwallsoulfour"
+              ]
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

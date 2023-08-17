@@ -148,6 +148,27 @@
       }
     ]
   },
+  // Imp
+  {
+    "name": "Imp",
+    "type": "toggle",
+    "img": "images/Imp.png",
+    "codes": "imp"
+  },
+  // Malacoda
+  {
+    "name": "Malacoda",
+    "type": "toggle",
+    "img": "images/Malacoda.png",
+    "codes": "malacoda"
+  },
+  // Flying Humanoid
+  {
+    "name": "Flying Humanoid",
+    "type": "toggle",
+    "img": "images/FlyingHumanoid.png",
+    "codes": "flyinghumanoid"
+  },
   // Magic Seal 1
   {
     "name": "Magic Seal 1",

@@ -45,6 +45,52 @@
       }
     ]
   },
+  "all_souls_item_grid": {
+    "type": "array",
+    "orientation": "center",
+    "content": [
+      {
+        "type": "itemgrid",
+        "h_alignment": "center",
+        "item_margin": "3,3",
+        "item_size": 72,
+        "rows": [
+          [
+            "flyingarmor",
+            "balore",
+            "malphas",
+            "puppetmaster",
+            "magicsealtwo",
+            "redwallsoulone"
+          ],
+          [
+            "rahab",
+            "zephyr",
+            "batcompany",
+            "paranoia",
+            "magicsealthree",
+            "redwallsoultwo"
+          ],
+          [
+            "hippogryph",
+            "blackpanther",
+            "towerkey",
+            "minastalisman",
+            "magicsealfour",
+            "redwallsoulthree"
+          ],
+          [
+            "imp",
+            "malacoda",
+            "flyinghumanoid",
+            "skeletonapeboneark",
+            "magicsealfive",
+            "redwallsoulfour"
+          ]
+        ]
+      }
+    ]
+  },
   "tracker_capture_item": {
     "type": "container",
     "content": {
